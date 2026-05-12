@@ -1,109 +1,79 @@
-// CREATE LUCIDE ICONS
-lucide.createIcons();
+const toggle = document.getElementById("themeToggle");
 
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
 
-// DARK MODE TOGGLE
-const themeToggle = document.getElementById("theme-toggle");
-
-themeToggle.addEventListener("click", () => {
-
-  document.body.classList.toggle("dark-mode");
-
+  if (document.body.classList.contains("dark")) {
+    toggle.textContent = "☀️";
+  } else {
+    toggle.textContent = "🌙";
+  }
 });
+/* ==========================================
 
+   RTL TOGGLE
 
-// RTL TOGGLE
-const rtlToggle = document.getElementById("rtl-toggle");
+========================================== */
+ 
+const rtlToggle = document.getElementById("rtlToggle");
 
-rtlToggle.addEventListener("click", () => {
+const rtlLabel = document.getElementById("rtlLabel");
+ 
+/* Load saved direction */
 
-  const html = document.documentElement;
+const savedDirection = localStorage.getItem("site-direction");
+ 
+if (savedDirection) {
 
-  if(html.getAttribute("dir") === "ltr"){
+  document.documentElement.setAttribute("dir", savedDirection);
 
-    html.setAttribute("dir", "rtl");
+}
+ 
+/* Update button text */
+
+function updateRTLLabel() {
+
+  const currentDir = document.documentElement.getAttribute("dir");
+ 
+  if (currentDir === "rtl") {
+
+    rtlLabel.textContent = "RTL";
 
   } else {
 
-    html.setAttribute("dir", "ltr");
+    rtlLabel.textContent = "LTR";
+
   }
 
-});
+}
+ 
+updateRTLLabel();
+ 
+/* Toggle direction */
 
+rtlToggle?.addEventListener("click", () => {
 
-// ACTIVE NAVIGATION LINK
-const navLinks = document.querySelectorAll(".navbar a");
+  const html = document.documentElement;
 
-navLinks.forEach(link => {
+  const currentDir = html.getAttribute("dir");
+ 
+  if (currentDir === "rtl") {
 
-  link.addEventListener("click", () => {
+    html.setAttribute("dir", "ltr");
 
-    navLinks.forEach(item => {
-      item.classList.remove("active-link");
-    });
+    localStorage.setItem("site-direction", "ltr");
 
-    link.classList.add("active-link");
+  } else {
 
-  });
+    html.setAttribute("dir", "rtl");
 
-});
+    localStorage.setItem("site-direction", "rtl");
 
-
-// BUTTON HOVER EFFECT
-const buttons = document.querySelectorAll(
-  ".primary-btn, .secondary-btn"
-);
-
-buttons.forEach(button => {
-
-  button.addEventListener("mouseenter", () => {
-
-    button.style.transform = "translateY(-2px)";
-
-  });
-
-  button.addEventListener("mouseleave", () => {
-
-    button.style.transform = "translateY(0px)";
-
-  });
+  }
+ 
+  updateRTLLabel();
 
 });
+ 
 
-
-// FEATURE CARD MOBILE TAP EFFECT
-const featureCards = document.querySelectorAll(".feature-card");
-
-featureCards.forEach(card => {
-
-  card.addEventListener("touchstart", () => {
-
-    card.style.transform = "scale(0.97)";
-
-  });
-
-  card.addEventListener("touchend", () => {
-
-    card.style.transform = "scale(1)";
-
-  });
-
-});
-
-
-// PRICING CARD SELECTION
-const pricingCards = document.querySelectorAll(".pricing-card");
-
-pricingCards.forEach(card => {
-
-  card.addEventListener("click", () => {
-
-    pricingCards.forEach(item => {
-      item.classList.remove("selected-card");
-    });
-
-    card.classList.add("selected-card");
-
-  });
-
-});
+ 
