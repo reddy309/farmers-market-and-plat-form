@@ -609,3 +609,73 @@ html[dir="rtl"] .hero-content{
   display: block;
   object-fit: cover;
 }
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: #fff;
+  width: 180px;
+  border-radius: 12px;
+  padding: 10px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+}
+
+.dropdown-menu a:hover {
+  background: #f3f4f6;
+}
+
+/* SHOW DROPDOWN */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* FIX DROPDOWN GOING OUTSIDE */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  display: none;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* KEEP INSIDE SCREEN */
+.navbar {
+  overflow: visible;
+}
