@@ -1,0 +1,139 @@
+/* ================= ROOT COLORS ================= */
+:root {
+  --primary: #2e7d32;
+  --secondary: #ffb300;
+  --text: #333;
+}
+
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav a.active {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.secondary {
+  background: var(--secondary);
+  color: black;
+}
+
+.icons i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 60vh;
+  background: url("https://images.unsplash.com/photo-1523741543316-beb7fc7023d8") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  padding:50px;
+  background:#f5f7f6;
+}
+
+/* CARD */
+.service-card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+  text-align:center;
+}
+
+.service-card:hover{
+  transform:translateY(-8px);
+}
+
+/* IMAGE */
+.service-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+/* TEXT */
+.service-card h3{
+  margin:15px 0 5px;
+  color:#2e7d32;
+}
+
+.service-card p{
+  font-size:14px;
+  padding:0 15px 20px;
+  color:#555;
+}
+@media(max-width:900px){
+  .services{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  .services{
+    grid-template-columns:1fr;
+  }
+}
