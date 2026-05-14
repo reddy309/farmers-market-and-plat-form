@@ -1,25 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
+// JavaScript
+const rtlBtn = document.getElementById("rtlBtn");
 
-  const themeBtn = document.getElementById("themeBtn");
-  const rtlBtn = document.getElementById("rtlBtn");
-
-  console.log(themeBtn, rtlBtn); // (check if buttons found)
-
-  if (themeBtn) {
-    themeBtn.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-    });
-  }
-
-  if (rtlBtn) {
-    rtlBtn.addEventListener("click", () => {
-      document.body.classList.toggle("rtl");
-    });
-  }
-
+rtlBtn.addEventListener("click", () => {
+  document.body.classList.toggle("rtl");
 });
-
-
 
 const serviceBoxes = document.querySelectorAll(".service-box");
 

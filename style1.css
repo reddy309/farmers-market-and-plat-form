@@ -701,4 +701,12 @@ transform:translateY(0);
 }
  
 
+body.rtl{
+  direction:rtl;
+  text-align: right ;
+  
+  
+}
+
+
  

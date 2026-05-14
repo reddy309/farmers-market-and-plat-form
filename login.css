@@ -1,0 +1,311 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+ 
+body{
+  font-family:'Poppins',sans-serif;
+  background:#081120;
+  overflow-x:hidden;
+}
+ 
+/* ================= LOGIN SECTION ================= */
+ 
+.login-section{
+  min-height:100vh;
+ 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ 
+  padding:30px 20px;
+ 
+  background:
+  radial-gradient(circle at left,#f4b40022,transparent 30%),
+  radial-gradient(circle at right,#00326255,transparent 30%),
+  #081120;
+}
+ 
+/* ================= LOGIN BOX ================= */
+ 
+.login-box{
+  width:100%;
+  max-width:460px;
+ 
+  background:rgba(20,25,35,0.92);
+ 
+  border:1px solid rgba(255,255,255,0.08);
+ 
+  border-radius:20px;
+ 
+  padding:20px 24px;
+ 
+  backdrop-filter:blur(12px);
+ 
+  box-shadow:0 8px 25px rgba(0,0,0,0.4);
+ 
+  animation:fadeUp 1s ease;
+}
+ 
+/* ================= LOGO ================= */
+ 
+.logo{
+  text-align:center;
+ 
+  font-size:32px;
+  font-weight:700;
+ 
+  color:#ffffff;
+ 
+  margin-bottom:4px;
+ 
+}
+.bl{
+    color: #003262;
+}
+.yl{
+    color:green ;
+}
+ 
+/* ================= TITLE ================= */
+ 
+.login-box h1{
+  text-align:center;
+ 
+  font-size:26px;
+ 
+  color:#ffffff;
+ 
+  margin-bottom:6px;
+}
+ 
+.subtitle{
+  text-align:center;
+ 
+  color:#9ca3af;
+ 
+  font-size:13px;
+ 
+  margin-bottom:18px;
+}
+ 
+/* ================= FORM ================= */
+ 
+.input-group{
+  margin-bottom:14px;
+}
+ 
+.input-group label{
+  display:block;
+ 
+  color:#ffffff;
+ 
+  font-size:13px;
+  font-weight:500;
+ 
+  margin-bottom:6px;
+}
+ 
+.input-group input{
+  width:100%;
+ 
+  padding:12px 14px;
+ 
+  border-radius:12px;
+ 
+  border:1px solid rgba(255,255,255,0.08);
+ 
+  background:rgba(255,255,255,0.05);
+ 
+  color:#ffffff;
+ 
+  font-size:13px;
+}
+ 
+.input-group input::placeholder{
+  color:#9ca3af;
+}
+ 
+/* ================= OPTIONS ================= */
+ 
+.options{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+ 
+  margin-bottom:16px;
+}
+ 
+.remember{
+  display:flex;
+  align-items:center;
+  gap:6px;
+ 
+  color:#ffffff;
+ 
+  font-size:12px;
+}
+ 
+.options a{
+  color:green;
+ 
+  text-decoration:none;
+ 
+  font-size:12px;
+}
+ 
+/* ================= LOGIN BUTTON ================= */
+ 
+.login-btn{
+  width:100%;
+ 
+  padding:12px;
+ 
+  border:none;
+ 
+  border-radius:12px;
+ 
+  background:#1e293b;
+
+ 
+  color:#ffffff;
+ 
+  font-size:14px;
+  font-weight:600;
+ 
+  cursor:pointer;
+ 
+  transition:0.3s;
+}
+ 
+.login-btn:hover{
+  background:#1e293b;
+
+}
+ 
+/* ================= DIVIDER ================= */
+ 
+.divider{
+  display:flex;
+  align-items:center;
+ 
+  gap:12px;
+ 
+  margin:18px 0;
+ 
+  color:#9ca3af;
+ 
+  font-size:11px;
+}
+ 
+.divider::before,
+.divider::after{
+  content:"";
+ 
+  flex:1;
+ 
+  height:1px;
+ 
+  background:rgba(255,255,255,0.1);
+}
+ 
+/* ================= SOCIAL BUTTONS ================= */
+ 
+.social-buttons{
+  display:grid;
+ 
+  grid-template-columns:repeat(2,1fr);
+ 
+  gap:12px;
+}
+ 
+.social-btn{
+  padding:12px;
+ 
+  border-radius:12px;
+ 
+  border:1px solid rgba(255,255,255,0.08);
+ 
+  background:rgba(255,255,255,0.05);
+ 
+  color:#ffffff;
+ 
+  font-size:13px;
+  font-weight:500;
+ 
+  cursor:pointer;
+ 
+  transition:0.3s;
+}
+ 
+.social-btn:hover{
+ background:#1e293b;
+
+}
+ 
+/* ================= SIGNUP ================= */
+ 
+.signup-text{
+  text-align:center;
+ 
+  color:#9ca3af;
+ 
+  margin-top:16px;
+ 
+  font-size:12px;
+}
+ 
+.signup-text a{
+  color: green;
+ 
+  text-decoration:none;
+ 
+  font-weight:600;
+}
+ 
+/* ================= ANIMATION ================= */
+ 
+@keyframes fadeUp{
+ 
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+ 
+}
+ 
+/* ================= RESPONSIVE ================= */
+ 
+@media(max-width:768px){
+ 
+  .login-box{
+    padding:35px 25px;
+  }
+ 
+  .logo{
+    font-size:42px;
+  }
+ 
+  .login-box h1{
+    font-size:36px;
+  }
+ 
+  .subtitle{
+    font-size:16px;
+  }
+ 
+  .social-buttons{
+    grid-template-columns:1fr;
+  }
+ .options{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+  }
+ 
+}

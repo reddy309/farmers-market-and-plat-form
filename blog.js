@@ -1,28 +1,10 @@
-const themeBtn = document.getElementById("themeBtn");
-const rtlBtn = document.getElementById("rtlBtn");
-
-// DARK MODE TOGGLE
-themeBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
-  if (document.body.classList.contains("dark")) {
-    themeBtn.textContent = "☀️ Light Mode";
-  } else {
-    themeBtn.textContent = "🌙 Dark Mode";
-  }
-});
 
 const rtlBtn = document.getElementById("rtlBtn");
 
 rtlBtn.addEventListener("click", () => {
-  if (document.body.dir === "rtl") {
-    document.body.dir = "ltr";
-    rtlBtn.innerText = "🔁 RTL Mode";
-  } else {
-    document.body.dir = "rtl";
-    rtlBtn.innerText = "⬅ LTR Mode";
-  }
+  document.body.classList.toggle("rtl");
 });
+
 
 // Simple search animation (optional)
 const searchBtn = document.querySelector(".search-box button");

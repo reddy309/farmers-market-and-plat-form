@@ -9,7 +9,7 @@ font-family:Arial;
 
 body{
 background:#fff;
-color:#111;
+color: white;
 transition:0.3s;
 }
 
@@ -43,7 +43,7 @@ gap:20px;
 
 .navbar a{
 text-decoration:none;
-color:#111;
+color:black;
 }
 
 /* BUTTONS */
@@ -69,34 +69,59 @@ border-radius:6px;
 cursor:pointer;
 }
 
-/* ================= DARK MODE ================= */
-.dark-mode{
-background:#111827;
-color:#fff;
-}
-
-.dark-mode .header{
-background:#1f2937;
-}
-
-.dark-mode .navbar a{
-color:#fff;
-}
-
-.dark-mode .btn{
-background:#374151;
-color:#fff;
-}
-
-/* ================= RTL ================= */
-.rtl{
-direction:rtl;
-text-align:right;
+body.rtl{
+  direction:rtl;
+  text-align: right ;
+  
+  
 }
 
 
 
-/* COLORS (2 MAIN ONLY) */
+
+  
+  
+
+  
+  
+ 
+
+ 
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* COLORS (2 MAIN ONLY) */
 :root {
   --primary: #16a34a;
   --secondary: #111827;
@@ -124,7 +149,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; 
   bottom: 0;
   background: rgba(0,0,0,0.6);
 }
@@ -1041,4 +1066,16 @@ visibility:visible;
 transform:translateY(0);
 }
  
- 
+ body{
+  background:white;
+  color:black;
+  transition:0.3s;
+}
+
+
+body.rtl{
+  direction:rtl;
+  text-align: right ;
+  
+  
+}

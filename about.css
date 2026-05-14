@@ -550,11 +550,11 @@ justify-content:center;
   color:#fff;
   transition:0.3s;
 }
-
-.rtl{
+body.rtl{
   direction:rtl;
-  text-align:right;
+  text-align: right ;
 }
+  
 
 
 .dropdown{

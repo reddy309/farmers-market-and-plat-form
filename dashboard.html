@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Farmers Market Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+         <button id="rtlBtn">RTL</button>
+
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>🌿 Farm Panel</h2>
+
+  <a href="#">🏠 Dashboard</a>
+  <a href="#">🛒 Products</a>
+  <a href="#">📦 Orders</a>
+  <a href="#">💰 Earnings</a>
+  <a href="#">📊 Analytics</a>
+  <a href="#">⚙️ Settings</a>
+  <a href="#">🚪 Logout</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Welcome Farmer 👨‍🌾</h1>
+    <p>Manage your marketplace easily</p>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+
+    <div class="card">
+      <h3>🌱 Products</h3>
+      <p id="products">120</p>
+    </div>
+
+    <div class="card">
+      <h3>📦 Orders</h3>
+      <p id="orders">45</p>
+    </div>
+
+    <div class="card">
+      <h3>💰 Earnings</h3>
+      <p id="earnings">₹25,000</p>
+    </div>
+
+    <div class="card">
+      <h3>🧑‍🌾 Vendors</h3>
+      <p id="vendors">18</p>
+    </div>
+  </div>
+
+
+  <section class="product-section">
+
+  <h2>🛒 Product Management</h2>
+  <p>Add, update, and manage your farm products</p>
+
+  <!-- ADD PRODUCT FORM -->
+  <div class="product-form">
+
+    <input type="text" placeholder="Product Name">
+    <input type="number" placeholder="Price (₹)">
+    <input type="number" placeholder="Stock (Kg / Qty)">
+
+    <select>
+      <option>Vegetables</option>
+      <option>Fruits</option>
+      <option>Grains</option>
+      <option>Dairy</option>
+    </select>
+
+    <button onclick="addProduct()">➕ Add Product</button>
+
+  </div>
+
+  <!-- PRODUCT LIST -->
+  <div class="product-grid">
+
+    <div class="product-card">
+      <h3>🍅 Tomatoes</h3>
+      <p>Price: ₹30/kg</p>
+      <p>Stock: 50kg</p>
+
+      <div class="btn-group">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <h3>🌾 Rice</h3>
+      <p>Price: ₹60/kg</p>
+      <p>Stock: 100kg</p>
+
+      <div class="btn-group">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <h3>🍎 Apples</h3>
+      <p>Price: ₹120/kg</p>
+      <p>Stock: 40kg</p>
+
+      <div class="btn-group">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+  <section class="orders-section">
+
+  <h2>📦 Orders Management</h2>
+  <p>Track and manage customer orders in real time</p>
+
+  <!-- ORDER FILTERS -->
+  <div class="order-filters">
+    <button>All</button>
+    <button>🟡 Pending</button>
+    <button>🔵 Processing</button>
+    <button>🟢 Delivered</button>
+    <button>🔴 Cancelled</button>
+  </div>
+
+  <!-- ORDERS LIST -->
+  <div class="orders-list">
+
+    <div class="order-card pending">
+      <h3>Order #101</h3>
+      <p>Customer: Ramesh</p>
+      <p>Product: Tomatoes (10kg)</p>
+      <p>Status: 🟡 Pending</p>
+
+      <button class="process">Process</button>
+      <button class="cancel">Cancel</button>
+    </div>
+
+    <div class="order-card processing">
+      <h3>Order #102</h3>
+      <p>Customer: Sita</p>
+      <p>Product: Rice (25kg)</p>
+      <p>Status: 🔵 Processing</p>
+
+      <button class="deliver">Mark Delivered</button>
+    </div>
+
+    <div class="order-card delivered">
+      <h3>Order #103</h3>
+      <p>Customer: Kumar</p>
+      <p>Product: Mangoes (5kg)</p>
+      <p>Status: 🟢 Delivered</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="earnings-section">
+
+  <h2>💰 Earnings Dashboard</h2>
+  <p>Track your income and withdrawals in real time</p>
+
+  <!-- CARDS -->
+  <div class="earnings-grid">
+
+    <div class="earn-card total">
+      <h3>Total Earnings</h3>
+      <p>₹45,000</p>
+    </div>
+
+    <div class="earn-card pending">
+      <h3>Pending Payments</h3>
+      <p>₹8,500</p>
+    </div>
+
+    <div class="earn-card month">
+      <h3>This Month</h3>
+      <p>₹12,300</p>
+    </div>
+
+  </div>
+
+  <!-- WITHDRAW -->
+  <div class="withdraw">
+
+    <h3>💸 Withdraw Money</h3>
+    <input type="number" placeholder="Enter amount">
+    <button onclick="withdrawMoney()">Withdraw</button>
+
+  </div>
+
+  <!-- TRANSACTIONS -->
+  <div class="history">
+
+    <h3>📜 Transaction History</h3>
+
+    <div class="item">Order #101 - Tomatoes <span class="plus">+₹1200</span></div>
+    <div class="item">Order #102 - Rice <span class="plus">+₹2500</span></div>
+    <div class="item">Withdrawal <span class="minus">-₹3000</span></div>
+
+  </div>
+
+</section>
+
+<section class="analytics-section">
+
+  <h2>📊 Analytics & Reports</h2>
+  <p>Track sales, growth, and product performance</p>
+
+  <!-- STATS -->
+  <div class="analytics-cards">
+
+    <div class="a-card">
+      <h3>Daily Sales</h3>
+      <p>₹2,500</p>
+      <div class="bar"><div class="fill daily"></div></div>
+    </div>
+
+    <div class="a-card">
+      <h3>Weekly Sales</h3>
+      <p>₹15,000</p>
+      <div class="bar"><div class="fill weekly"></div></div>
+    </div>
+
+    <div class="a-card">
+      <h3>Monthly Sales</h3>
+      <p>₹60,000</p>
+      <div class="bar"><div class="fill monthly"></div></div>
+    </div>
+
+  </div>
+
+  <!-- PERFORMANCE -->
+  <div class="performance">
+
+    <h3>📈 Product Performance</h3>
+
+    <div class="item">
+      Tomatoes <span>80%</span>
+      <div class="progress"><div class="p tomato"></div></div>
+    </div>
+
+    <div class="item">
+      Rice <span>65%</span>
+      <div class="progress"><div class="p rice"></div></div>
+    </div>
+
+    <div class="item">
+      Mangoes <span>90%</span>
+      <div class="progress"><div class="p mango"></div></div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="settings-section">
+
+  <h2>⚙️ Settings</h2>
+  <p>Manage your profile, security, and preferences</p>
+
+  <!-- PROFILE SETTINGS -->
+  <div class="settings-card">
+
+    <h3>👤 Profile Settings</h3>
+
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+    <input type="text" placeholder="Phone Number">
+
+    <button>Save Profile</button>
+
+  </div>
+
+  <!-- SECURITY -->
+  <div class="settings-card">
+
+    <h3>🔐 Security</h3>
+
+    <input type="password" placeholder="New Password">
+    <input type="password" placeholder="Confirm Password">
+
+    <button>Update Password</button>
+
+  </div>
+
+  <!-- PREFERENCES -->
+  <div class="settings-card">
+
+    <h3>🌙 Preferences</h3>
+
+    <div class="toggle">
+      <span>Dark Mode</span>
+      <input type="checkbox">
+    </div>
+
+    <div class="toggle">
+      <span>Email Notifications</span>
+      <input type="checkbox" checked>
+    </div>
+
+    <div class="toggle">
+      <span>SMS Alerts</span>
+      <input type="checkbox">
+    </div>
+
+  </div>
+
+</section>
+
+<section class="logout-section">
+
+  <h2>🚪 Logout</h2>
+  <p>Securely exit your Farmer Dashboard</p>
+
+  <button onclick="openLogout()">Logout</button>
+
+</section>
+
+<!-- CONFIRM POPUP -->
+<div class="logout-popup" id="logoutPopup">
+
+  <div class="popup-box">
+    <h3>Are you sure you want to logout?</h3>
+
+    <div class="popup-actions">
+      <button class="yes" onclick="logout()">Yes, Logout</button>
+      <button class="no" onclick="closeLogout()">Cancel</button>
+    </div>
+
+  </div>
+
+</div>
+
+  
+
+
+     
+
+
+<script src="dashboard.js"></script>
+</body>
+</html>

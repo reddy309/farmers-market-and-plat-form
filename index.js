@@ -1,16 +1,23 @@
-// ================= DARK MODE =================
-const themeBtn = document.getElementById("themeBtn");
 
-themeBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-});
-
-// ================= RTL MODE =================
+// JavaScript
 const rtlBtn = document.getElementById("rtlBtn");
 
 rtlBtn.addEventListener("click", () => {
   document.body.classList.toggle("rtl");
 });
+
+
+
+// JavaScript
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.onclick = function () {
+  document.body.classList.toggle("dark");
+};
+
+
+ 
+
 
 // Simple animation trigger
 window.addEventListener("load", () => {

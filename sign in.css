@@ -1,0 +1,318 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+ 
+body{
+  font-family:'Poppins',sans-serif;
+  background:#081120;
+  overflow-x:hidden;
+}
+ 
+/* ================= SIGNUP SECTION ================= */
+ 
+.signup-section{
+  min-height:100vh;
+ 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ 
+  padding:40px 20px;
+ 
+  background:
+  radial-gradient(circle at left,#f4b40022,transparent 30%),
+  radial-gradient(circle at right,#00326255,transparent 30%),
+  #081120;
+}
+.bl{
+    color: #003262;
+}
+.yl{
+    color:green ;
+}
+ 
+/* ================= SIGNUP BOX ================= */
+ 
+.signup-box{
+  width:100%;
+  max-width:780px;   /* increased width */
+ 
+  background:rgba(20,25,35,0.92);
+ 
+  border:1px solid rgba(255,255,255,0.08);
+ 
+  border-radius:20px;
+ 
+  padding:18px 24px;   /* decreased height */
+ 
+  backdrop-filter:blur(12px);
+ 
+  box-shadow:0 8px 25px rgba(0,0,0,0.4);
+ 
+  animation:fadeUp 1s ease;
+}
+ 
+/* ================= LOGO ================= */
+ 
+.logo{
+  text-align:center;
+ 
+  font-size:30px;
+  font-weight:700;
+ 
+  color:#ffffff;
+ 
+  margin-bottom:0;
+}
+ 
+/* ================= TITLE ================= */
+ 
+.signup-box h1{
+  text-align:center;
+ 
+  font-size:26px;
+ 
+  color:#ffffff;
+ 
+  margin-bottom:4px;
+}
+ 
+.subtitle{
+  text-align:center;
+ 
+  color:#9ca3af;
+ 
+  font-size:12px;
+ 
+  margin-bottom:16px;
+}
+ 
+/* ================= DOUBLE INPUT ================= */
+ 
+.double-input{
+  display:grid;
+ 
+  grid-template-columns:repeat(2,1fr);
+ 
+  gap:12px;
+}
+ 
+/* ================= INPUT GROUP ================= */
+ 
+.input-group{
+  margin-bottom:10px;
+}
+ 
+.input-group label{
+  display:block;
+ 
+  color:#ffffff;
+ 
+  font-size:12px;
+  font-weight:600;
+ 
+  margin-bottom:4px;
+}
+ 
+.input-group input{
+  width:100%;
+ 
+  padding:10px 12px;
+ 
+  border-radius:10px;
+ 
+  border:1px solid rgba(255,255,255,0.08);
+ 
+  background:rgba(255,255,255,0.05);
+ 
+  color:#ffffff;
+ 
+  font-size:12px;
+ 
+  transition:0.3s;
+}
+ 
+.input-group input:focus{
+  outline:none;
+ 
+  border-color: #1e293b;
+;
+ 
+  box-shadow:0 0 6pxborder#1e293b;
+
+}
+ 
+/* ================= TERMS ================= */
+ 
+.terms{
+  display:flex;
+  align-items:center;
+ 
+  gap:6px;
+ 
+  margin-bottom:14px;
+ 
+  color:#ffffff;
+ 
+  font-size:11px;
+}
+ 
+.terms a{
+  color:green;
+ 
+  text-decoration:none;
+}
+ 
+/* ================= BUTTON ================= */
+ 
+.signup-btn{
+  width:100%;
+ 
+  padding:10px;
+ 
+  border:none;
+ 
+  border-radius:10px;
+ 
+background:#0f172a;
+
+ 
+  color:#ffffff;
+ 
+  font-size:14px;
+  font-weight:600;
+ 
+  cursor:pointer;
+ 
+  transition:0.3s;
+}
+ 
+.signup-btn:hover{
+  background: green;
+}
+ 
+/* ================= DIVIDER ================= */
+ 
+.divider{
+  display:flex;
+  align-items:center;
+ 
+  gap:8px;
+ 
+  margin:14px 0;
+ 
+  color:#9ca3af;
+ 
+  font-size:10px;
+}
+ 
+.divider::before,
+.divider::after{
+  content:"";
+ 
+  flex:1;
+ 
+  height:1px;
+ 
+  background:#0f172a;
+
+}
+ 
+/* ================= SOCIAL BUTTONS ================= */
+ 
+.social-buttons{
+  display:grid;
+ 
+  grid-template-columns:repeat(2,1fr);
+ 
+  gap:10px;
+}
+ 
+.social-btn{
+  padding:10px;
+ 
+  border-radius:10px;
+ 
+  border:1px solid rgba(255,255,255,0.08);
+ 
+  background:rgba(255,255,255,0.05);
+ 
+  color:#ffffff;
+ 
+  font-size:12px;
+  font-weight:500;
+ 
+  cursor:pointer;
+ 
+  transition:0.3s;
+}
+ 
+.social-btn:hover{
+  background: green;
+
+}
+ 
+/* ================= LOGIN TEXT ================= */
+ 
+.login-text{
+  text-align:center;
+ 
+  color:#9ca3af;
+ 
+  margin-top:12px;
+ 
+  font-size:11px;
+}
+ 
+.login-text a{
+  color: green;
+ 
+  text-decoration:none;
+ 
+  font-weight:600;
+}
+/* ================= ANIMATION ================= */
+ 
+@keyframes fadeUp{
+ 
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+ 
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+ 
+}
+ 
+/* ================= RESPONSIVE ================= */
+ 
+@media(max-width:768px){
+ 
+  .signup-box{
+    padding:30px 22px;
+  }
+ 
+  .double-input{
+    grid-template-columns:1fr;
+    gap:0;
+  }
+ 
+  .social-buttons{
+    grid-template-columns:1fr;
+  }
+ 
+  .signup-box h1{
+    font-size:34px;
+  }
+ 
+  .logo{
+    font-size:38px;
+  }
+ 
+}
+ 

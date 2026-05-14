@@ -1,5 +1,3 @@
-
-
 // JavaScript
 const rtlBtn = document.getElementById("rtlBtn");
 

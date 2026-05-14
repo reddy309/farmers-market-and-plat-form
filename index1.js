@@ -5,21 +5,14 @@ themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
-// ================= RTL MODE =================
+
+// JavaScript
 const rtlBtn = document.getElementById("rtlBtn");
 
 rtlBtn.addEventListener("click", () => {
   document.body.classList.toggle("rtl");
 });
 
-document.querySelectorAll(".hero button").forEach(btn => {
-  btn.addEventListener("click", () => {
-    btn.style.transform = "scale(0.95)";
-    setTimeout(() => {
-      btn.style.transform = "scale(1)";
-    }, 150);
-  });
-});
 
 const showcaseButtons = document.querySelectorAll(".showcase-card button");
 
