@@ -1,21 +1,20 @@
-// Simple UI interaction for icons
-
 document.addEventListener("DOMContentLoaded", () => {
 
-  const moon = document.querySelector(".fa-moon");
+  const themeBtn = document.getElementById("themeBtn");
+  const rtlBtn = document.getElementById("rtlBtn");
 
-  moon.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-  });
+  console.log(themeBtn, rtlBtn); // (check if buttons found)
 
-});
+  if (themeBtn) {
+    themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  }
 
-document.querySelectorAll(".service-card").forEach(card => {
-  card.addEventListener("mouseenter", () => {
-    card.style.borderBottom = "4px solid #2e7d32";
-  });
+  if (rtlBtn) {
+    rtlBtn.addEventListener("click", () => {
+      document.body.classList.toggle("rtl");
+    });
+  }
 
-  card.addEventListener("mouseleave", () => {
-    card.style.borderBottom = "none";
-  });
 });

@@ -1,332 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farmers Market - About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmers Market Platform</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="about.css" />
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- ICON LIBRARY -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- ================= HEADER ================= -->
 <header class="header">
+  <div class="container nav">
 
-  <!-- LOGO -->
-  <div class="logo">FarmMarket</div>
+    <div class="logo">FarmMarket</div>
 
-  <!-- NAV -->
-  <nav class="nav">
+    <nav class="navbar" id="navbar">
+      <div class="dropdown">
+<a href="#home" class="drop-btn">Home ▾</a>
+ 
+<div class="dropdown-content">
+<a href="#home1">Home 1</a>
+<a href="#home2">Home 2</a>
+</div>
+</div>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="Blog">Blog</a>
+      
+      <a href="#Dashboard">Dashboard</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
-    <a href="#">Dashboard</a>
+    <div class="actions">
 
-    <!-- DASHBOARD LAST LINK -->
-    <a href="#">Dashboard</a>
+       <button id="themeBtn" class="btn">Dark</button>
+      <button id="rtlBtn" class="btn">RTL</button>
+      <!-- CTA -->
+      <button class="primary-btn">Login</button>
 
-  </nav>
-
-  <!-- HEADER ACTIONS -->
-  <div class="actions">
-
-    <!-- DARK MODE -->
-    <button id="darkToggle" class="icon-btn">
-      <i class="fa-solid fa-moon"></i>
-    </button>
-
-    <!-- RTL -->
-    <button class="icon-btn">
-      <i class="fa-solid fa-right-left"></i>
-    </button>
-
-    <!-- SECONDARY CTA -->
-    <button class="btn secondary">Login</button>
-
-    <!-- PRIMARY CTA -->
-    <button class="btn primary">Get Started</button>
+    </div>
 
   </div>
-
 </header>
 
-<section class="hero">
-  <div class="hero-overlay">
-    <h1>Fresh From Farmers to Your Table</h1>
-    <p>Connect directly with local farmers and buy fresh organic produce</p>
-    <a href="#" class="btn">Explore Market</a>
-  </div>
-</section>
+<section class="about-hero" id="about">
 
+  <div class="about-overlay"></div>
 
+  <div class="container about-hero-content">
 
- 
+    <h1>About Our Farmers Market</h1>
 
-<!-- ================= FEATURES SECTION ================= -->
-<section class="features">
+    <p>
+      We connect local farmers directly with customers to deliver fresh,
+      organic, and chemical-free products at fair prices.
+    </p>
 
-  <div class="section-header">
-    <h2 class="h1">Platform Features</h2>
-    <p>Everything you need to connect farmers and buyers efficiently</p>
-  </div>
-
-  <div class="features-grid">
-
-    <div class="feature-card">
-      <i class="fa-solid fa-seedling"></i>
-      <h3>Fresh Produce</h3>
-      <p>Direct access to farm-fresh fruits and vegetables without middlemen.</p>
-    </div>
-
-    <div class="feature-card">
-      <i class="fa-solid fa-handshake"></i>
-      <h3>Direct Trading</h3>
-      <p>Farmers and buyers connect directly for fair pricing and transparency.</p>
-    </div>
-
-    <div class="feature-card">
-      <i class="fa-solid fa-truck"></i>
-      <h3>Fast Delivery</h3>
-      <p>Quick logistics system ensures fresh delivery from farm to home.</p>
-    </div>
-
-    <div class="feature-card">
-      <i class="fa-solid fa-shield-halved"></i>
-      <h3>Secure Payments</h3>
-      <p>Safe and reliable payment system with transaction protection.</p>
-    </div>
-
-    <div class="feature-card">
-      <i class="fa-solid fa-chart-line"></i>
-      <h3>Market Insights</h3>
-      <p>Real-time pricing and demand analytics for better decisions.</p>
-    </div>
-
-    <div class="feature-card">
-      <i class="fa-solid fa-leaf"></i>
-      <h3>Sustainable Farming</h3>
-      <p>Promoting eco-friendly farming practices and organic produce.</p>
-    </div>
+    <button class="about-btn">Learn More</button>
 
   </div>
 
 </section>
 
-<!-- ================= STATISTICS SECTION ================= -->
-<section class="stats">
+<section class="section who-we-are" id="who">
 
-  <div class="section-header">
-    <h2 class="h2">Our Impact in Numbers</h2>
-    <p>We are growing a strong ecosystem for farmers and buyers</p>
-  </div>
+  <div class="container who-grid">
 
-  <div class="stats-grid">
-
-    <div class="stat-card">
-      <h3 class="counter" data-target="5000">0</h3>
-      <p>Registered Farmers</p>
+    <!-- IMAGE -->
+    <div class="who-image">
+      <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8" alt="Farmers Market">
     </div>
 
-    <div class="stat-card">
-      <h3 class="counter" data-target="12000">0</h3>
-      <p>Happy Customers</p>
-    </div>
+    <!-- CONTENT -->
+    <div class="who-content">
 
-    <div class="stat-card">
-      <h3 class="counter" data-target="350">0</h3>
-      <p>Daily Orders</p>
-    </div>
+      <h2 class="section-title">MISSON</h2>
 
-    <div class="stat-card">
-      <h3 class="counter" data-target="25">0</h3>
-      <p>Active Regions</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ================= HOW IT WORKS SECTION ================= -->
-<section class="how-it-works">
-
-  <div class="section-header">
-    <h2 class="h3">How It Works</h2>
-    <p>Simple steps to connect farmers and buyers directly</p>
-  </div>
-
-  <div class="steps-grid">
-
-    <div class="step-card">
-      <div class="step-number">1</div>
-      <i class="fa-solid fa-user-plus"></i>
-      <h3>Create Account</h3>
-      <p>Sign up as a farmer or buyer to join the platform easily.</p>
-    </div>
-
-    <div class="step-card">
-      <div class="step-number">2</div>
-      <i class="fa-solid fa-store"></i>
-      <h3>List or Browse Products</h3>
-      <p>Farmers list fresh produce, buyers explore available products.</p>
-    </div>
-
-    <div class="step-card">
-      <div class="step-number">3</div>
-      <i class="fa-solid fa-handshake"></i>
-      <h3>Place Order</h3>
-      <p>Buyers directly place orders with transparent pricing.</p>
-    </div>
-
-    <div class="step-card">
-      <div class="step-number">4</div>
-      <i class="fa-solid fa-truck-fast"></i>
-      <h3>Fast Delivery</h3>
-      <p>Products are delivered fresh from farm to your doorstep.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="six-grid">
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e" />
- 
-    <h3>Fresh Vegetables</h3>
-    <p>Direct farm fresh produce.</p>
-  </div>
-
-  <div class="card">
-    <img img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9" />
-
-    <h3>Organic Fruits</h3>
-    <p>Healthy and chemical-free fruits.</p>
-  </div>
-
-  <div class="card">
-    <img img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7" />
- 
-    <h3>Fast Delivery</h3>
-    <p>Farm to home delivery system.</p>
-  </div>
-
-  <div class="card">
-    <img  src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8" />
-
-    <h3>Direct Trade</h3>
-    <p>No middlemen pricing system.</p>
-  </div>
-
-  <div class="card">
-    <img img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924" />
- 
-    <h3>Smart Farming</h3>
-    <p>Modern agriculture techniques.</p>
-  </div>
-
-  <div class="card">
-    <img img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" />
-    <h3>Eco Friendly</h3>
-    <p>Sustainable farming methods.</p>
-  </div>
-
-</section>
-
-     
-    
-
-<!-- ================= TRUSTED PARTNERS ================= -->
-<section class="partners">
-
-  <div class="section-header">
-    <h2 class="h4">Trusted Partners</h2>
-    <p>We collaborate with leading agriculture & logistics companies</p>
-  </div>
-
-  <div class="partners-grid">
-
-    <div class="partner-card">
-      <img src="images/t 1 images.jpg"/>
-      <h3>Cargill</h3>
-      <p>Agriculture supply partner</p>
-    </div>
-
-    <div class="partner-card">
-      <img src="images/t 2 image.jpg" />
-      <h3>PepsiCo</h3>
-      <p>Food & farming support</p>
-    </div>
-
-    <div class="partner-card">
-      <img src="images/t 3 image.jpg" />
-      <h3>ITC Limited</h3>
-      <p>Agri-business solutions</p>
-    </div>
-
-    <div class="partner-card">
-      <img src="images/t 4 image.jpg" />
-      <h3>DHL</h3>
-      <p>Fast logistics partner</p>
-    </div>
-
-    <div class="partner-card">
-      <img src="images/t 5 image.webp" />
-      <h3>Amazon</h3>
-      <p>E-commerce technology</p>
-    </div>
-
-    <div class="partner-card">
-      <img src="images/t 6 image.webp" />
-      <h3>Flipkart</h3>
-      <p>Marketplace ecosystem</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ================= MISSION & VISION ================= -->
-<section class="mission-vision">
-
-  <div class="section-header">
-    <h2 class="h5">Our Mission & Vision</h2>
-    <p>Driving a transparent and sustainable farming ecosystem</p>
-  </div>
-
-  <div class="mv-container">
-
-    <!-- MISSION -->
-    <div class="mv-card">
-
-      <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9" />
-
-      <h3>Our Mission</h3>
       <p>
-        To empower farmers by eliminating middlemen and providing a direct
-        digital marketplace for fair pricing and fresh produce distribution.
+        We are a digital farmers market platform connecting farmers and customers
+        directly for fresh and organic products.
       </p>
 
-    </div>
-
-    <!-- VISION -->
-    <div class="mv-card">
-
-      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" />
-
-      <h3>Our Vision</h3>
       <p>
-        To build a sustainable agriculture ecosystem where technology
-        connects every farmer directly with buyers across the country.
+        Farmers list their products on our platform, and customers can easily
+        browse, order, and receive fresh food at their doorstep.
+      </p>
+
+      <p>
+        Our system ensures fair pricing, transparency, and supports local farmers
+        by removing middlemen.
+      </p>
+
+      <p>
+        This marketplace makes farming modern, simple, and accessible for everyone.
       </p>
 
     </div>
@@ -335,65 +105,243 @@
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+<section class="section vision" id="vision">
+
+  <div class="container vision-grid">
+
+    <!-- IMAGE -->
+    <div class="vision-image">
+      <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0" alt="Sustainable Farming Vision">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="vision-content">
+
+      <h2 class="section-title">Our Vision</h2>
+
+      <p>
+        Our vision is to build a global digital platform that supports farmers
+        and promotes sustainable agriculture worldwide.
+      </p>
+
+      <p>
+        We aim to encourage eco-friendly and sustainable farming practices
+        for a healthier future.
+      </p>
+
+      <p>
+        We believe in accelerating digital farming growth by using technology
+        to connect farmers and customers efficiently.
+      </p>
+
+      <p>
+        Our goal is to empower farmers globally and give them fair access
+        to markets and opportunities.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section how-it-works" id="how">
+
+  <div class="container">
+
+    <h2 class="section-title">How It Works</h2>
+
+    <div class="steps-grid">
+
+      <div class="step-card">
+        <img src="https://img.icons8.com/color/96/farmer.png" alt="">
+        <i class="fa-solid fa-tractor"></i>
+        <h3>Farmers Upload Products</h3>
+        <p>Farmers add fresh organic products with details and pricing.</p>
+      </div>
+
+      <div class="step-card">
+        
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Customers Browse & Order</h3>
+        <p>Customers explore products and place orders easily online.</p>
+      </div>
+
+      <div class="step-card">
+        
+        <i class="fa-solid fa-lock"></i>
+        <h3>Secure Payment</h3>
+        <p>Safe and encrypted payment ensures secure transactions.</p>
+      </div>
+
+      <div class="step-card">
+        
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Fast Delivery</h3>
+        <p>Fresh products delivered quickly to your doorstep.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section stats" id="stats">
+
+  <div class="container">
+
+    <h2 class="section-title">Our Statistics</h2>
+
+    <div class="stats-grid">
+
+      <div class="stat-box">
+        <h1 class="count" data-target="1200">0</h1>
+        <p>Active Farmers</p>
+      </div>
+
+      <div class="stat-box">
+        <h1 class="count" data-target="5000">0</h1>
+        <p>Happy Customers</p>
+      </div>
+
+      <div class="stat-box">
+        <h1 class="count" data-target="15000">0</h1>
+        <p>Orders Delivered</p>
+      </div>
+
+      <div class="stat-box">
+        <h1 class="count" data-target="8000">0</h1>
+        <p>Organic Products Listed</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="section why-choose" id="why">
+
+  <div class="container">
+
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="why-center">
+
+      <div class="why-item">
+        <i class="fa-solid fa-handshake"></i>
+        <p>No Middlemen</p>
+      </div>
+
+      <div class="why-item">
+        <i class="fa-solid fa-seedling"></i>
+        <p>Fresh Organic Products</p>
+      </div>
+
+      <div class="why-item">
+        <i class="fa-solid fa-tags"></i>
+        <p>Fair Pricing</p>
+      </div>
+
+      <div class="why-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <p>Fast Delivery</p>
+      </div>
+
+      <div class="why-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <p>Secure Platform</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section testimonials" id="testimonials">
+
+  <div class="container">
+
+    <h2 class="section-title">Testimonials</h2>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+        <p>
+          “Fresh vegetables delivered on time. The quality is excellent and prices are fair.”
+        </p>
+        <h4>— Happy Customer</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <p>
+          “This platform helped me sell directly to customers without middlemen. My income improved.”
+        </p>
+        <h4>— Local Farmer</h4>
+      </div>
+
+      <div class="testimonial-card">
+        <p>
+          “Very easy to use and reliable service. I always get fresh organic products.”
+        </p>
+        <h4>— Regular Buyer</h4>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 <footer class="footer">
 
   <div class="footer-container">
 
-    <!-- COLUMN 1 -->
+    <!-- BRAND -->
     <div class="footer-box">
-      <h2>FarmMarket</h2>
-      <p>
-        Connecting farmers and buyers directly with a transparent,
-        sustainable, and smart marketplace platform.
-      </p>
-    </div>
-
-    <!-- COLUMN 2 -->
-    <div class="footer-box">
-      <h3>Quick Links</h3>
-      <a href="#">Home</a>
-      <a href="#">Venders</a>
-      <a href="#">product</a>
-      <a href="#">pricing</a>
-    </div>
-
-    <!-- COLUMN 3 -->
-    <div class="footer-box">
-      <h3>Services</h3>
-      <a href="#">help center</a>
-      <a href="#">Contact</a>
-      <a href="#">privacy policy</a>
-      <a href="#">Terms</a>
-    </div>
-
-    <!-- COLUMN 4 -->
-    <div class="footer-box">
-      <h3>Contact</h3>
-      <p><i class="fa-solid fa-location-dot"></i> India</p>
-      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
-      <p><i class="fa-solid fa-envelope"></i> support@farmmarket.com</p>
+      <h3>FarmMarket</h3>
+      <p>Fresh products directly from farmers to your home.</p>
 
       <div class="social-icons">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin"></i>
+
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
       </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-box">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Vendors</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+      <h4>Contact</h4>
+
+      <p>Email: support@farmmarket.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: India</p>
     </div>
 
   </div>
 
-  <!-- BOTTOM BAR -->
   <div class="footer-bottom">
-    <p>© 2026 FarmMarket. All Rights Reserved.</p>
+    © 2026 FarmMarket Platform
   </div>
 
 </footer>
 
 
 
-
-    <script src="about.js"></script>
+<script src="about.js"></script>
 </body>
 </html>
+

@@ -1,79 +1,37 @@
-const toggle = document.getElementById("themeToggle");
+// ================= DARK MODE =================
+const themeBtn = document.getElementById("themeBtn");
 
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-
-  if (document.body.classList.contains("dark")) {
-    toggle.textContent = "☀️";
-  } else {
-    toggle.textContent = "🌙";
-  }
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
 });
-/* ==========================================
 
-   RTL TOGGLE
+// ================= RTL MODE =================
+const rtlBtn = document.getElementById("rtlBtn");
 
-========================================== */
- 
-const rtlToggle = document.getElementById("rtlToggle");
-
-const rtlLabel = document.getElementById("rtlLabel");
- 
-/* Load saved direction */
-
-const savedDirection = localStorage.getItem("site-direction");
- 
-if (savedDirection) {
-
-  document.documentElement.setAttribute("dir", savedDirection);
-
-}
- 
-/* Update button text */
-
-function updateRTLLabel() {
-
-  const currentDir = document.documentElement.getAttribute("dir");
- 
-  if (currentDir === "rtl") {
-
-    rtlLabel.textContent = "RTL";
-
-  } else {
-
-    rtlLabel.textContent = "LTR";
-
-  }
-
-}
- 
-updateRTLLabel();
- 
-/* Toggle direction */
-
-rtlToggle?.addEventListener("click", () => {
-
-  const html = document.documentElement;
-
-  const currentDir = html.getAttribute("dir");
- 
-  if (currentDir === "rtl") {
-
-    html.setAttribute("dir", "ltr");
-
-    localStorage.setItem("site-direction", "ltr");
-
-  } else {
-
-    html.setAttribute("dir", "rtl");
-
-    localStorage.setItem("site-direction", "rtl");
-
-  }
- 
-  updateRTLLabel();
-
+rtlBtn.addEventListener("click", () => {
+  document.body.classList.toggle("rtl");
 });
- 
 
- 
+// Simple animation trigger
+window.addEventListener("load", () => {
+  console.log("Services Overview Loaded");
+});
+
+// Trigger load animation
+window.addEventListener("load", () => {
+  console.log("Key Features Section Loaded");
+});
+// simple load log
+window.addEventListener("load", () => {
+  console.log("Farmer Success Stories Loaded");
+});
+
+// simple load animation log
+window.addEventListener("load", () => {
+  console.log("Featured Products Section Loaded");
+});
+
+// simple load trigger
+window.addEventListener("load", () => {
+  console.log("Market Trends Section Loaded");
+});

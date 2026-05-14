@@ -1,293 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farmers Market Platform</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmers Market Platform</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-  <header class="header">
 
-  <!-- LOGO -->
-  <div class="logo">FarmMarket</div>
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container nav">
 
+    <div class="logo">FarmMarket</div>
 
+    <nav class="navbar" id="navbar">
+      
 
+      <div class="dropdown">
+<a href="#home" class="drop-btn">Home ▾</a>
+ 
+<div class="dropdown-content">
+<a href="index.html">Home 1</a>
+<a href="index 1.html">Home 2</a>
+</div>
+</div>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="b log.html">Blog</a>
+      <a href="#Dashboard">Dashboard</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+    <div class="actions">
 
- <div class="dropdown">
+      <!-- DARK MODE -->
+      <button id="themeBtn" class="btn">Dark</button>
 
-  <a href="#">Home ▾</a>
+      <!-- RTL -->
+      <button id="rtlBtn" class="btn">RTL</button>
 
-  <div class="dropdown-menu">
-    <a href="index.html">Home 1</a>
-    <a href="index 1.html">Home 2</a>
-    
+      <!-- CTA -->
+      <button class="primary-btn">Login</button>
+
+    </div>
+
   </div>
-  
-
-
-    <!-- NAV LINKS -->
-    <a href="about.html" class="nav-link">About</a>
-    <a href="services.html" class="nav-link">Services</a>
-    <a href="#" class="nav-link">Pricing</a>
-    <a href="#" class="nav-link">Blog</a>
-    <a href="#" class="nav-link">Contact</a>
-    <a href="#" class="nav-link">Dashboard</a>
- </div>
-  </nav>
-
-  
-
-
-   
-
-  <div class="actions">
-    <button class="btn secondary">Login</button>
-    
-    <button id="themeToggle" class="icon-btn">🌙</button>
-  </div>
-  <button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">
-<span id="rtlLabel">LTR</span>
-</button>
-  
 </header>
 
-<section class="bg-section">
-  <div class="overlay">
-
-    <div class="content">
-      <h1>Fresh From Farm to Your Home</h1>
-      <p>
-        Connect directly with local farmers and get organic, fresh products without middlemen.
-      </p>
-
-      <button class="btn primary">Explore Market</button>
-      <button class="btn secondary">Join as Vendor</button>
-    </div>
-
-  </div>
-</section>
-
-<section class="stats-section">
-
-  <div class="stats-container">
-
-    <div class="stat-box">
-      <h2>500+</h2>
-      <p>Farmers</p>
-    </div>
-
-    <div class="stat-box">
-      <h2>10,000+</h2>
-      <p>Customers</p>
-    </div>
-
-    <div class="stat-box">
-      <h2>1,200+</h2>
-      <p>Products</p>
-    </div>
-
-    <div class="stat-box">
-      <h2>98%</h2>
-      <p>Customer Satisfaction</p>
-    </div>
-
-  </div>
-
-</section>
 
 
+<section class="hero">
 
-<section class="categories-section">
+  <!-- OVERLAY CONTENT -->
+  <div class="hero-content">
 
-  <div class="section-title">
-    <h2 class="k">Product Categories</h2>
-    <p>Explore fresh organic products directly from local farmers.</p>
-  </div>
+    <h1>Direct Farm to Market Platform</h1>
 
-  <div class="categories-grid">
-
-    <div class="category-card">
-      <img src="images/image 7.jpg" alt="Vegetables">
-
-      <div class="category-content">
-        <h3>Fresh Vegetables</h3>
-        <p>Organic and healthy farm vegetables.</p>
-      </div>
-    </div>
-
-    <div class="category-card">
-      <img src="images/image 8.webp" alt="Fruits">
-
-      <div class="category-content">
-        <h3>Seasonal Fruits</h3>
-        <p>Sweet and naturally grown fruits.</p>
-      </div>
-    </div>
-
-    <div class="category-card">
-      <img src="images/image 9.avif" alt="Dairy">
-
-      <div class="category-content">
-        <h3>Dairy Products</h3>
-        <p>Fresh milk, butter, and cheese products.</p>
-      </div>
-    </div>
-
-  
-
-  </div>
-
-</section>
-
-<section class="products-section">
-
-  <div class="section-title">
-    <h2 class="k1">Fresh Products</h2>
-    <p>Buy fresh organic products directly from local farmers.</p>
-  </div>
-
-  <div class="products-grid">
-
-    <div class="product-card">
-      <img src="images/tomata image.jpg" alt="tomata">
-
-      <div class="product-content">
-        <h3>Fresh Tomatoes</h3>
-        <p>Organic farm tomatoes.</p>
-
-        <div class="product-bottom">
-          <span>₹40 / kg</span>
-          <button class="btn primary">Add Cart</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <img src="images/image 5.webp" alt="Milk">
-
-      <div class="product-content">
-        <h3>Pure Milk</h3>
-        <p>Fresh dairy milk.</p>
-
-        <div class="product-bottom">
-          <span>₹60 / liter</span>
-          <button class="btn primary">Add Cart</button>
-        </div>
-      </div>
-    </div>
-
-    
-
-        
-
-    <div class="product-card">
-      <img src="images/image 6.jpg" alt="Apples">
-
-      <div class="product-content">
-        <h3>Fresh Apples</h3>
-        <p>Sweet seasonal apples.</p>
-
-        <div class="product-bottom">
-          <span>₹120 / kg</span>
-          <button class="btn primary">Add Cart</button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="works-section">
-
-  <div class="section-title">
-    <h2 class="k2">How It Works</h2>
-    <p>Simple process to connect farmers, vendors, and customers.</p>
-  </div>
-
-  <div class="works-grid">
-
-    <div class="work-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Register">
-
-      <h3>1. Farmers Register</h3>
-
-      <p>
-        Farmers create accounts and list fresh products on the platform.
-      </p>
-    </div>
-
-    <div class="work-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" alt="Browse">
-
-      <h3>2. Customers Browse</h3>
-
-      <p>
-        Customers explore products and choose trusted local farmers.
-      </p>
-    </div>
-
-    <div class="work-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Delivery">
-
-      <h3>3. Fast Delivery</h3>
-
-      <p>
-        Fresh farm products are delivered quickly and safely.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="services-section">
-
-  <div class="section-title">
-    <h2 class="k3">Our Services</h2>
     <p>
-      We provide trusted services to farmers, vendors, and customers.
+      Connect farmers directly with buyers, remove middlemen,
+      and increase profit with a smart digital marketplace.
     </p>
-  </div>
 
-  <div class="services-grid">
+    <!-- CTA BUTTONS -->
+    <div class="buttons">
+      <button class="primary">Join as Vendor</button>
+      <button class="secondary">Start Buying</button>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="services">
+
+  <h2>🛠️ Services Overview</h2>
+  <p>Complete digital solutions for farmers and vendors</p>
+
+  <div class="service-grid">
 
     <div class="service-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png" alt="Delivery">
-
-      <h3>Fast Delivery</h3>
-
-      <p>
-        Fresh farm products delivered safely and quickly to customers.
-      </p>
+      <div class="icon">🧑‍🌾</div>
+      <h3>Vendor Registration</h3>
+      <p>Easy online signup with profile and verification support.</p>
     </div>
 
     <div class="service-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Organic">
-
-      <h3>Organic Products</h3>
-
-      <p>
-        Healthy and chemical-free organic products from trusted farms.
-      </p>
+      <div class="icon">📦</div>
+      <h3>Product Listing</h3>
+      <p>Upload fresh products with images, categories, and pricing tools.</p>
     </div>
-
-    
 
     <div class="service-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Support">
+      <div class="icon">🛒</div>
+      <h3>Marketplace Sales</h3>
+      <p>Sell directly to customers without middlemen for better profit.</p>
+    </div>
 
-      <h3>24/7 Support</h3>
+    <div class="service-card">
+      <div class="icon">🚚</div>
+      <h3>Delivery Support</h3>
+      <p>Integrated delivery tracking and logistics management system.</p>
+    </div>
 
-      <p>
-        Dedicated customer support for farmers, vendors, and buyers.
-      </p>
+    <div class="service-card">
+      <div class="icon">💳</div>
+      <h3>Payment System</h3>
+      <p>Secure transactions with instant payouts and wallet support.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📢</div>
+      <h3>Marketing Tools</h3>
+      <p>Promotions, offers, and featured listings to boost sales.</p>
     </div>
 
   </div>
@@ -295,139 +123,120 @@
 </section>
 
 
-<section class="pricing-section">
 
-  <div class="section-title">
-    <h2 class="k4">Pricing Plans</h2>
-    <p>
-      Choose the best plan for your farming business and marketplace growth.
-    </p>
-  </div>
+<section class="features">
 
-  <div class="pricing-grid">
+  <h2>📊 Key Features & Highlights</h2>
+  <p>Powerful tools designed to connect farmers and buyers efficiently</p>
 
-    <!-- BASIC PLAN -->
-    <div class="pricing-card">
+  <div class="feature-grid">
 
-      <h3>Basic</h3>
-
-      <h1>Free</h1>
-
-      <ul>
-        <li>✔ Product Listings</li>
-        <li>✔ Vendor Profile</li>
-        <li>✔ Basic Support</li>
-        <li>✔ Limited Visibility</li>
-      </ul>
-
-      <button class="btn secondary">Choose Plan</button>
-
+    <div class="feature-card">
+      <div class="icon">⚡</div>
+      <h3>Fast Ordering System</h3>
+      <p>Quick and seamless order placement with instant confirmation.</p>
     </div>
 
-    <!-- POPULAR PLAN -->
-    <div class="pricing-card popular-card">
-
-      <div class="popular-badge">Popular</div>
-
-      <h3>Pro Vendor</h3>
-
-      <h1>₹499<span>/month</span></h1>
-
-      <ul>
-        <li>✔ Unlimited Listings</li>
-        <li>✔ Priority Visibility</li>
-        <li>✔ Analytics Dashboard</li>
-        <li>✔ Premium Support</li>
-      </ul>
-
-      <button class="btn primary">Get Started</button>
-
+    <div class="feature-card">
+      <div class="icon">🤝</div>
+      <h3>Direct Farmer-to-Buyer</h3>
+      <p>No middlemen—farmers sell directly to customers for better profit.</p>
     </div>
 
-    <!-- ENTERPRISE PLAN -->
-    <div class="pricing-card">
+    <div class="feature-card">
+      <div class="icon">🔒</div>
+      <h3>Secure Payments</h3>
+      <p>Safe transactions with encrypted payment gateway support.</p>
+    </div>
 
-      <h3>Enterprise</h3>
+    <div class="feature-card">
+      <div class="icon">📡</div>
+      <h3>Real-Time Updates</h3>
+      <p>Live order tracking, pricing updates, and availability status.</p>
+    </div>
 
-      <h1>₹999<span>/month</span></h1>
-
-      <ul>
-        <li>✔ All Pro Features</li>
-        <li>✔ Dedicated Manager</li>
-        <li>✔ Advanced Reports</li>
-        <li>✔ Custom Branding</li>
-      </ul>
-
-      <button class="btn secondary">Choose Plan</button>
-
+    <div class="feature-card">
+      <div class="icon">📱</div>
+      <h3>Mobile-Friendly Platform</h3>
+      <p>Optimized experience for all devices including mobile and tablets.</p>
     </div>
 
   </div>
 
 </section>
 
-<section class="testimonials-section">
 
-  <div class="section-title">
-    <h2 class="k5">What Our Customers Say</h2>
-    <p>
-      Trusted by thousands of customers and farmers across the platform.
-    </p>
+
+<section class="success">
+
+  <h2>🚜 Farmer Success Stories</h2>
+  <p>Real growth stories from farmers using our platform</p>
+
+  <!-- GROWTH HIGHLIGHTS -->
+  <div class="growth">
+
+    <div class="growth-card">
+      <h3>1,200+</h3>
+      <p>Active Farmers</p>
+    </div>
+
+    <div class="growth-card">
+      <h3>85%</h3>
+      <p>Income Growth</p>
+    </div>
+
+    <div class="growth-card">
+      <h3>5,000+</h3>
+      <p>Daily Orders</p>
+    </div>
+
   </div>
 
-  <div class="testimonials-grid">
+  <!-- SUCCESS STORIES -->
+  <div class="story-grid">
 
-    <div class="testimonial-card">
+    <!-- CARD 1 -->
+    <div class="story-card">
 
-      <div class="testimonial-top">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+      <h3>👨‍🌾 Ramesh Kumar</h3>
 
-        <div>
-          <h3>Ravi Kumar</h3>
-          <span>★★★★★</span>
-        </div>
+      <div class="income">
+        <div class="before">Before<br>₹8,000</div>
+        <div class="arrow">➡️</div>
+        <div class="after">After<br>₹28,000</div>
       </div>
 
-      <p>
-        Fresh vegetables arrived quickly and the quality was excellent.
-        Highly recommended platform for organic products.
-      </p>
+      <p>"Selling directly helped me increase my income significantly."</p>
 
     </div>
 
-    <div class="testimonial-card">
+    <!-- CARD 2 -->
+    <div class="story-card">
 
-      <div class="testimonial-top">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+      <h3>👩‍🌾 Lakshmi Devi</h3>
 
-        <div>
-          <h3>Anjali Sharma</h3>
-          <span>★★★★★</span>
-        </div>
+      <div class="income">
+        <div class="before">Before<br>₹10,000</div>
+        <div class="arrow">➡️</div>
+        <div class="after">After<br>₹35,000</div>
       </div>
 
-      <p>
-        I love buying directly from local farmers. Prices are affordable
-        and products are always fresh.
-      </p>
+      <p>"Now I reach more customers without middlemen."</p>
 
     </div>
 
-    <div class="testimonial-card">
+    <!-- CARD 3 -->
+    <div class="story-card">
 
-      <div class="testimonial-top">
-        <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Customer">
+      <h3>👨‍🌾 Suresh Reddy</h3>
 
-        <div>
-          <h3>Suresh Reddy</h3>
-          <span>★★★★★</span>
-        </div>
+      <div class="income">
+        <div class="before">Before<br>₹12,000</div>
+        <div class="arrow">➡️</div>
+        <div class="after">After<br>₹42,000</div>
       </div>
 
-      <p>
-        Secure payments, fast delivery, and excellent customer support.
-        Very professional marketplace platform.
-      </p>
+      <p>"The platform improved my farming business growth."</p>
 
     </div>
 
@@ -437,53 +246,220 @@
 
 
 
+<section class="products">
+
+  <h2>🛒 Featured Products</h2>
+  <p>Fresh farm products directly from farmers</p>
+
+  <div class="product-grid">
+
+    <!-- VEGETABLES -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="">
+      <h3>Vegetables</h3>
+      <p>Fresh & organic farm vegetables</p>
+      <span class="price">₹40 / kg</span>
+    </div>
+
+    <!-- FRUITS -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e" alt="">
+      <h3>Fruits</h3>
+      <p>Seasonal fresh fruits collection</p>
+      <span class="price">₹80 / kg</span>
+    </div>
+
+    <!-- GRAINS -->
+    <div class="product-card">
+      <img src="images/g1 image.jpg" alt="">
+      <h3>Grains</h3>
+      <p>High-quality natural grains</p>
+      <span class="price">₹60 / kg</span>
+    </div>
+
+    <!-- DAIRY -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b" alt="">
+      <h3>Dairy Products</h3>
+      <p>Fresh milk and dairy items</p>
+      <span class="price">₹70 / liter</span>
+    </div>
+
+  </div>
+
+</section>
 
 
 
+<section class="trends">
 
-<!-- FOOTER -->
+  <h2>📊 Market Trends</h2>
+  <p>Real-time insights on agricultural market performance</p>
+
+  <!-- TOP METRICS -->
+  <div class="trend-stats">
+
+    <div class="stat-card">
+      <h3>₹28/kg</h3>
+      <p>Average Vegetable Price</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>+18%</h3>
+      <p>Demand Growth</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>High</h3>
+      <p>Seasonal Demand Level</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Top</h3>
+      <p>Trending Crops</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="blog-preview">
+
+  <h2>📝 Latest Blog & Updates</h2>
+  <p>Farming tips, market insights, and agricultural knowledge</p>
+
+  <div class="blog-grid">
+
+    <!-- CARD 1 -->
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="">
+      <div class="content">
+        <span class="tag">🌾 Farming Tips</span>
+        <h3>Organic Farming Guide</h3>
+        <p>Learn natural techniques to improve soil health and crop yield.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8" alt="">
+      <div class="content">
+        <span class="tag">📊 Market Updates</span>
+        <h3>Daily Price Trends</h3>
+        <p>Stay updated with real-time vegetable and fruit prices.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="blog-card">
+      <img src="images/s image.jpg" alt="">
+      <div class="content">
+        <span class="tag">🚜 Agriculture</span>
+        <h3>Smart Farming Tools</h3>
+        <p>Explore modern AI tools and technology in agriculture.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
 <footer class="footer">
+
   <div class="footer-container">
 
-    <!-- Brand Info -->
+    <!-- BRAND -->
     <div class="footer-box">
       <h3>FarmMarket</h3>
-      <p>Connecting farmers, vendors, and customers with fresh organic products directly from farms.</p>
+      <p>Fresh products directly from farmers to your home.</p>
+
+      <div class="social-icons">
+
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+      </div>
     </div>
 
-    <!-- Quick Links -->
+    <!-- LINKS -->
     <div class="footer-box">
       <h4>Quick Links</h4>
       <a href="#">Home</a>
       <a href="#">Vendors</a>
       <a href="#">Products</a>
-      <a href="#">Pricing</a>
-    </div>
-
-    <!-- Support -->
-    <div class="footer-box">
-      <h4>Support</h4>
-      <a href="#">Help Center</a>
       <a href="#">Contact</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms</a>
     </div>
 
-    <!-- Contact -->
+    <!-- CONTACT -->
     <div class="footer-box">
       <h4>Contact</h4>
+
       <p>Email: support@farmmarket.com</p>
       <p>Phone: +91 98765 43210</p>
+      <p>Location: India</p>
     </div>
 
-
-
+  </div>
 
   <div class="footer-bottom">
-    <p>© 2026 FarmMarket. All Rights Reserved.</p>
+    © 2026 FarmMarket Platform
   </div>
+
 </footer>
 
-<script src="index.js"></script>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+      
+        
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+    
+
+      
+
+
+
+
+        
+
+
+
+
+          
+    
+
+
+
+      
+    
+
+<script src="about.js"></script>
 </body>
 </html>

@@ -1,92 +1,85 @@
-// DARK MODE
+// ================= DARK MODE =================
+const themeBtn = document.getElementById("themeBtn");
 
-const modeBtn = document.querySelector(".mode-btn");
-
-modeBtn.addEventListener("click", () => {
-
+themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
+});
 
-  if(document.body.classList.contains("dark-mode")){
+// ================= RTL MODE =================
+const rtlBtn = document.getElementById("rtlBtn");
 
-    modeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+rtlBtn.addEventListener("click", () => {
+  document.body.classList.toggle("rtl");
+});
 
-  } else {
+document.querySelectorAll(".hero button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.style.transform = "scale(0.95)";
+    setTimeout(() => {
+      btn.style.transform = "scale(1)";
+    }, 150);
+  });
+});
 
-    modeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+const showcaseButtons = document.querySelectorAll(".showcase-card button");
 
-  }
+showcaseButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.innerText = "Added ✔";
+    setTimeout(() => {
+      btn.innerText = "View Details";
+    }, 1000);
+  });
+});
+
+function payNow(){
+  document.getElementById("payMsg").innerText =
+  "Payment successful ✔ (Demo Mode)";
+}
+const plans = document.querySelectorAll(".pricing-card button");
+
+plans.forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("Plan selected successfully ✔");
+  });
+});
+
+document.querySelector(".enterprise-cta button").addEventListener("click", () => {
+  alert("Enterprise team will contact you soon ✔");
+});
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
+
+  question.addEventListener("click", () => {
+
+    // close others
+    faqItems.forEach(i => {
+      if(i !== item){
+        i.classList.remove("active");
+      }
+    });
+
+    // toggle current
+    item.classList.toggle("active");
+  });
 
 });
-/* ==========================================
 
-   RTL TOGGLE
+document.querySelectorAll(".cta-buttons button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("Thank you for your interest ✔");
+  });
+});
 
-========================================== */
- 
-const rtlToggle = document.getElementById("rtlToggle");
+document.addEventListener("DOMContentLoaded", () => {
 
-const rtlLabel = document.getElementById("rtlLabel");
- 
-/* Load saved direction */
+  const themeBtn = document.getElementById("themeBtn");
 
-const savedDirection = localStorage.getItem("site-direction");
- 
-if (savedDirection) {
-
-  document.documentElement.setAttribute("dir", savedDirection);
-
-}
- 
-/* Update button text */
-
-function updateRTLLabel() {
-
-  const currentDir = document.documentElement.getAttribute("dir");
- 
-  if (currentDir === "rtl") {
-
-    rtlLabel.textContent = "RTL";
-
-  } else {
-
-    rtlLabel.textContent = "LTR";
-
-  }
-
-}
- 
-updateRTLLabel();
- 
-/* Toggle direction */
-
-rtlToggle?.addEventListener("click", () => {
-
-  const html = document.documentElement;
-
-  const currentDir = html.getAttribute("dir");
- 
-  if (currentDir === "rtl") {
-
-    html.setAttribute("dir", "ltr");
-
-    localStorage.setItem("site-direction", "ltr");
-
-  } else {
-
-    html.setAttribute("dir", "rtl");
-
-    localStorage.setItem("site-direction", "rtl");
-
-  }
- 
-  updateRTLLabel();
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
 
 });
- 
-
- 
-
-
- 
-
- 

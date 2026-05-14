@@ -1,278 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AgroSphere</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmers Market Platform</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style1.css" />
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- ICONS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container nav">
 
-    <div class="logo">
-      <i class="fa-solid fa-leaf"></i>
-      AgroSphere
-    </div>
-    <ul class="nav-links">
-          <li class="dropdown">
-        <a href="index.html">Home ▾</a>
+    <div class="logo">FarmMarket</div>
+
+    <nav class="navbar" id="navbar">
+      <div class="dropdown">
+<a href="#home" class="drop-btn">Home ▾</a>
  
-        <ul class="dropdown-menu">
-          <li><a href="index.html">Home 1</a></li>
-           <li><a href="index 1.html">Home 2</a></li>
-        </ul>
-      </li>
-       
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Contact</a></li>
-     
-        <li><a href="">Dashboard</a></li>
- 
-      
- 
-      
-      
+<div class="dropdown-content">
+<a href="index.html">Home 1</a>
+<a href="index 1.html">Home 2</a>
+</div>
+</div>
+      <a href="about.html">About</a>
+      <a href="services.html">services</a>
+      <a hre="b log.html">Blog</a>
+      <a href="#Dashboard">Dashboard</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    
-    
-     
-    
-      
+    <div class="actions">
 
-    <div class="header-buttons">
+      <!-- DARK MODE -->
+      <button id="themeBtn" class="btn">Dark</button>
 
-      <button class="mode-btn">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-      <!-- RTL Toggle -->
-<button class="rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">
-<span id="rtlLabel">LTR</span>
-</button
+      <!-- RTL -->
+      <button id="rtlBtn" class="btn">RTL</button>
 
-      <button class="secondary-btn">Login</button>
-
-      
+      <!-- CTA -->
+      <button class="primary-btn">Login</button>
 
     </div>
 
-  </header>
+  </div>
+</header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+<section class="hero" id="home">
 
-    <div class="hero-overlay"></div>
+  <div class="hero-overlay"></div>
 
-    <div class="hero-content">
+  <div class="container hero-content">
 
-      <h1>
-        Smart Agriculture <br>
-        Marketplace Platform
-      </h1>
+    <div class="hero-text">
+
+      <h1>Fresh Organic Food Directly From Farmers</h1>
 
       <p>
-        Connect farmers, vendors, and customers with a premium
-        digital agriculture ecosystem designed for growth.
+        Discover healthy, chemical-free vegetables, fruits, and dairy products
+        delivered straight from local farms to your doorstep.
       </p>
 
       <div class="hero-buttons">
-
-        <button class="primary-btn">
-          Explore Platform
-        </button>
-
-        <button class="secondary-btn">
-          Watch Demo
-        </button>
-
+        <button class="btn-primary">Shop Now</button>
+        <button class="btn-secondary">Become a Vendor</button>
       </div>
-
-    </div>
-
-  </section>
-  <!-- TRUSTED BRANDS SECTION -->
-<section class="trusted-brands">
-
-  <div class="section-title">
-
-    <h2>Trusted Brands & Partners</h2>
-
-    <p>
-      Collaborating with premium agriculture and organic marketplace companies worldwide.
-    </p>
-
-  </div>
-
-  <div class="brands-container">
-
-    <!-- BRAND 1 -->
-    <div class="brand-card">
-
-      <img src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png" alt="">
-
-      <h3>Organic Farms</h3>
-
-      <p>
-        Trusted organic farming partner delivering healthy fresh products.
-      </p>
-
-    </div>
-
-    <!-- BRAND 2 -->
-    <div class="brand-card">
-
-      <img src="https://cdn-icons-png.flaticon.com/512/869/869636.png" alt="">
-
-      <h3>Fresh Harvest</h3>
-
-      <p>
-        Premium agriculture supplier with modern farming solutions.
-      </p>
-
-    </div>
-
-    <!-- BRAND 3 -->
-    <div class="brand-card">
-
-      <img src="https://cdn-icons-png.flaticon.com/512/628/628324.png" alt="">
-
-      <h3>Green Market</h3>
-
-      <p>
-        Marketplace platform connecting local farmers and customers.
-      </p>
-
-    </div>
-
-    <!-- BRAND 4 -->
-    <div class="brand-card">
-
-      <img src="https://cdn-icons-png.flaticon.com/512/766/766212.png" alt="">
-
-      <h3>Agro Delivery</h3>
-
-      <p>
-        Smart delivery network ensuring safe and fast transportation.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- FEATURES SECTION -->
-<section class="features-section">
-
-  <div class="section-title">
-
-    <h2>Premium Platform Features</h2>
-
-    <p>
-      Smart agriculture solutions designed for modern farming businesses.
-    </p>
-
-  </div>
-
-  <div class="features-container">
-
-    <!-- FEATURE 1 -->
-    <div class="feature-card">
-
-      <div class="feature-icon">
-        <i class="fa-solid fa-chart-line"></i>
-      </div>
-
-      <h3>Smart Analytics</h3>
-
-      <p>
-        Track sales, customer activity, and agriculture growth with advanced analytics.
-      </p>
-
-    </div>
-
-    <!-- FEATURE 2 -->
-    <div class="feature-card">
-
-      <div class="feature-icon">
-        <i class="fa-solid fa-seedling"></i>
-      </div>
-
-      <h3>Organic Products</h3>
-
-      <p>
-        Promote and manage high-quality organic farming products with ease.
-      </p>
-
-    </div>
-
-    <!-- FEATURE 3 -->
-    <div class="feature-card">
-
-      <div class="feature-icon">
-        <i class="fa-solid fa-truck-fast"></i>
-      </div>
-
-      <h3>Fast Delivery</h3>
-
-      <p>
-        Real-time delivery tracking and secure transportation management system.
-      </p>
-
-    </div>
-
-    <!-- FEATURE 4 -->
-    <div class="feature-card">
-
-      <div class="feature-icon">
-        <i class="fa-solid fa-shield-halved"></i>
-      </div>
-
-      <h3>Secure Payments</h3>
-
-      <p>
-        Advanced payment protection and safe digital transaction processing.
-      </p>
-
-    </div>
-
-    <!-- FEATURE 5 -->
-    <div class="feature-card">
-
-      <div class="feature-icon">
-        <i class="fa-solid fa-mobile-screen"></i>
-      </div>
-
-      <h3>Mobile Friendly</h3>
-
-      <p>
-        Fully responsive platform optimized for mobile, tablet, and desktop users.
-      </p>
-
-    </div>
-
-    <!-- FEATURE 6 -->
-    <div class="feature-card">
-
-      <div class="feature-icon">
-        <i class="fa-solid fa-headset"></i>
-      </div>
-
-      <h3>24/7 Support</h3>
-
-      <p>
-        Dedicated customer support team available anytime for assistance.
-      </p>
 
     </div>
 
@@ -280,323 +76,300 @@
 
 </section>
 
- <!-- SECTION 2 -->
-  <section class="premium-section">
 
-    <div class="premium-image">
+        <section class="section showcase" id="showcase">
 
-      <img src="images/image 1.jpg" alt="">
+  <div class="container">
 
-    </div>
+    <h2 class="section-title">Best Selling Products</h2>
 
-    <div class="premium-content">
+    <div class="showcase-grid">
 
-      <h2>
-        Premium Farming Solutions
-      </h2>
-
-      <p>
-        Empower your agriculture business with digital management tools,
-        live product tracking, and secure customer communication.
-      </p>
-
-      <ul>
-
-        <li>
-          <i class="fa-solid fa-check"></i>
-          Smart Inventory Tracking
-        </li>
-
-        <li>
-          <i class="fa-solid fa-check"></i>
-          Secure Payment System
-        </li>
-
-        <li>
-          <i class="fa-solid fa-check"></i>
-          AI Market Insights
-        </li>
-
-      </ul>
-
-      <button class="primary-btn">
-        Learn More
-      </button>
-
-    </div>
-
-  </section>
-
-  <!-- SECTION 3 -->
-  <section class="stats-section">
-
-    <div class="section-title">
-
-      <h2>Platform Statistics</h2>
-
-      <p>
-        Trusted by farmers and customers across multiple regions.
-      </p>
-
-    </div>
-
-    <div class="stats-grid">
-
-      <div class="stat-card">
-        <h3>15K+</h3>
-        <p>Active Customers</p>
+      <div class="showcase-card">
+        <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="">
+        <h3>Organic Tomatoes</h3>
+        <p>Fresh farm tomatoes rich in taste and nutrients.</p>
+        <span>₹40 / kg</span>
+        <button>View Details</button>
       </div>
 
-      <div class="stat-card">
-        <h3>3K+</h3>
-        <p>Verified Farmers</p>
+      <div class="showcase-card">
+        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e" alt="">
+        <h3>Red Apples</h3>
+        <p>Sweet and juicy apples from organic farms.</p>
+        <span>₹120 / kg</span>
+        <button>View Details</button>
       </div>
 
-      <div class="stat-card">
-        <h3>25+</h3>
-        <p>Countries Served</p>
+      <div class="showcase-card">
+        <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2" alt="">
+        <h3>Fresh Milk</h3>
+        <p>Pure cow milk delivered daily from farms.</p>
+        <span>₹60 / liter</span>
+        <button>View Details</button>
       </div>
 
-      <div class="stat-card">
-        <h3>98%</h3>
-        <p>Customer Satisfaction</p>
+      <div class="showcase-card">
+        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655" alt="">
+        <h3>Carrots</h3>
+        <p>Crunchy organic carrots full of vitamins.</p>
+        <span>₹35 / kg</span>
+        <button>View Details</button>
       </div>
 
-    </div>
-
-  </section>
-  <!-- HOW IT WORKS SECTION -->
-<section class="how-it-works">
-
-  <div class="section-title">
-    <h2>How It Works</h2>
-    <p>
-      Simple steps for farmers and vendors to connect with customers,
-      manage products, and grow sales online.
-    </p>
-  </div>
-
-  <div class="steps-container">
-
-    <!-- STEP 1 -->
-    <div class="step-box">
-      <div class="step-number">01</div>
-
-      <img src="images/image 11.jpg" alt="Register Vendor">
-
-      <h3>Create Account</h3>
-
-      <p>
-        Farmers and vendors quickly sign up and create their professional marketplace profile.
-      </p>
-    </div>
-
-    <!-- STEP 2 -->
-    <div class="step-box">
-      <div class="step-number">02</div>
-
-      <img src="images/image 12.jpeg" alt="Add Products">
-
-      <h3>Add Products</h3>
-
-      <p>
-        Upload fresh vegetables, fruits, dairy products, and market items with pricing details.
-      </p>
-    </div>
-
-    <!-- STEP 3 -->
-    <div class="step-box">
-      <div class="step-number">03</div>
-
-      <img src="images/12.jpg" alt="Receive Orders">
-
-      <h3>Receive Orders</h3>
-
-      <p>
-        Customers browse products, place orders online, and vendors receive instant notifications.
-      </p>
-    </div>
-
-    <!-- STEP 4 -->
-    <div class="step-box">
-      <div class="step-number">04</div>
-
-      <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=500&q=80" alt="Delivery">
-
-      <h3>Deliver & Earn</h3>
-
-      <p>
-        Vendors deliver products directly to customers and grow their business revenue efficiently.
-      </p>
     </div>
 
   </div>
 
 </section>
 
-  <!-- SECTION 4 -->
-  <section class="pricing">
+<section class="section payment" id="payment">
 
-    <div class="section-title">
+  <div class="container">
 
-      <h2>Pricing Plans</h2>
+    <h2 class="section-title">Secure Payment</h2>
 
-      <p>
-        Flexible plans for startups, vendors, and enterprise businesses.
-      </p>
+    <div class="payment-box">
+
+      <input type="text" placeholder="Card Number">
+      <input type="text" placeholder="Card Holder Name">
+      <input type="text" placeholder="Expiry Date">
+      <input type="text" placeholder="CVV">
+
+      <button onclick="payNow()">Pay Now</button>
+
+      <p id="payMsg"></p>
 
     </div>
+
+  </div>
+
+</section>
+
+<section class="section pricing" id="pricing">
+
+  <div class="container">
+
+    <h2 class="section-title">Choose Your Plan</h2>
 
     <div class="pricing-grid">
 
-      <div class="price-card">
+      <!-- BASIC -->
+      <div class="pricing-card">
+        <h3>Basic</h3>
+        <h1>Free</h1>
+        <p>Perfect for small farmers</p>
 
-        <h3>Starter</h3>
+        <ul>
+          <li>✔ Basic product listing</li>
+          <li>✔ Limited visibility</li>
+          <li>✔ Email support</li>
+        </ul>
 
-        <h1>$19</h1>
-
-        <p>Basic platform access</p>
-
-        <button class="secondary-btn">
-          Choose Plan
-        </button>
-
+        <button>Get Started</button>
       </div>
 
-      <div class="price-card popular">
+      <!-- PREMIUM (POPULAR) -->
+      <div class="pricing-card popular">
+        <div class="badge">Most Popular</div>
 
-        <span class="popular-badge">Popular</span>
+        <h3>Premium</h3>
+        <h1>₹499 / month</h1>
+        <p>Best for growing businesses</p>
 
-        <h3>Professional</h3>
+        <ul>
+          <li>✔ Unlimited products</li>
+          <li>✔ Featured listing</li>
+          <li>✔ Priority support</li>
+          <li>✔ Analytics dashboard</li>
+        </ul>
 
-        <h1>$49</h1>
-
-        <p>Advanced business tools</p>
-
-        <button class="primary-btn">
-          Choose Plan
-        </button>
-
+        <button class="active">Choose Plan</button>
       </div>
 
-      <div class="price-card">
+      <!-- PRO -->
+      <div class="pricing-card">
+        <h3>Pro</h3>
+        <h1>₹999 / month</h1>
+        <p>For large scale farmers</p>
 
-        <h3>Enterprise</h3>
+        <ul>
+          <li>✔ Top search ranking</li>
+          <li>✔ Ad promotion</li>
+          <li>✔ 24/7 support</li>
+        </ul>
 
-        <h1>$99</h1>
-
-        <p>Full premium features</p>
-
-        <button class="secondary-btn">
-          Choose Plan
-        </button>
-
+        <button>Get Started</button>
       </div>
 
     </div>
 
-  </section>
+  </div>
 
-  <!-- FOOTER -->
+</section>
+
+<section class="section enterprise" id="enterprise">
+
+  <div class="container">
+
+    <h2 class="section-title">Enterprise Solutions</h2>
+
+    <p class="enterprise-subtitle">
+      Scalable solutions for large farms, distributors, and agricultural businesses.
+    </p>
+
+    <div class="enterprise-grid">
+
+      <div class="enterprise-card">
+        <h3>Bulk Supply Management</h3>
+        <p>Handle large-scale orders with automated processing and tracking.</p>
+      </div>
+
+      <div class="enterprise-card">
+        <h3>Dedicated Account Manager</h3>
+        <p>Get personal support for business operations and growth.</p>
+      </div>
+
+      <div class="enterprise-card">
+        <h3>Advanced Analytics</h3>
+        <p>Track sales, demand, and performance with real-time insights.</p>
+      </div>
+
+      <div class="enterprise-card">
+        <h3>Custom Integration</h3>
+        <p>Connect your ERP, CRM, and supply chain systems easily.</p>
+      </div>
+
+    </div>
+
+    <div class="enterprise-cta">
+      <button>Contact Enterprise Team</button>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section faq" id="faq">
+
+  <div class="container">
+
+    <h2 class="section-title">Frequently Asked Questions</h2>
+
+    <div class="faq-box">
+
+      <div class="faq-item">
+        <button class="faq-question">How do I register as a farmer?</button>
+        <div class="faq-answer">
+          <p>You can register by clicking on the Sign Up button and selecting “Farmer Account”.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How are payments processed?</button>
+        <div class="faq-answer">
+          <p>Payments are securely processed through our integrated payment gateway system.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Can I sell organic products only?</button>
+        <div class="faq-answer">
+          <p>Yes, we encourage organic and chemical-free farming products.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How does delivery work?</button>
+        <div class="faq-answer">
+          <p>We partner with local delivery services to ensure fast and fresh delivery.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+      
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta-banner" id="cta">
+
+  <div class="container cta-content">
+
+    <h2>Join the Farmers Market Today</h2>
+
+    <p>
+      Connect directly with local farmers, get fresh organic products,
+      and grow your business with our platform.
+    </p>
+
+    <div class="cta-buttons">
+      <button class="primary-btn">Get Started</button>
+      
+    </div>
+
+  </div>
+
+</section>
+
+
 <footer class="footer">
 
   <div class="footer-container">
 
-    <!-- FOOTER BRAND -->
+    <!-- BRAND -->
     <div class="footer-box">
+      <h3>FarmMarket</h3>
+      <p>Fresh products directly from farmers to your home.</p>
 
-      <div class="footer-logo">
-        <i class="fa-solid fa-leaf"></i>
-        AgroSphere
-      </div>
-
-      <p>
-        Premium agriculture marketplace platform helping farmers,
-        vendors, and customers grow together digitally.
-      </p>
-
-      <div class="footer-socials">
+      <div class="social-icons">
 
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
 
       </div>
-
     </div>
 
-    <!-- QUICK LINKS -->
+    <!-- LINKS -->
     <div class="footer-box">
-
-      <h3>Quick Links</h3>
-
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Dashboard</a></li>
-      </ul>
-
-    </div>
-
-    <!-- SERVICES -->
-    <div class="footer-box">
-
-      <h3>Services</h3>
-
-      <ul>
-        <li><a href="#">Organic Products</a></li>
-        <li><a href="#">Farm Analytics</a></li>
-        <li><a href="#">Market Insights</a></li>
-        <li><a href="#">Fast Delivery</a></li>
-      </ul>
-
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Vendors</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
     </div>
 
     <!-- CONTACT -->
     <div class="footer-box">
+      <h4>Contact</h4>
 
-      <h3>Contact</h3>
-
-      <ul>
-        <li>
-          <i class="fa-solid fa-location-dot"></i>
-          Andhra Pradesh, India
-        </li>
-
-        <li>
-          <i class="fa-solid fa-phone"></i>
-          +91 98765 43210
-        </li>
-
-        <li>
-          <i class="fa-solid fa-envelope"></i>
-          support@agrosphere.com
-        </li>
-      </ul>
-
+      <p>Email: support@farmmarket.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: India</p>
     </div>
 
   </div>
 
-  <!-- FOOTER BOTTOM -->
   <div class="footer-bottom">
-
-    <p>
-      © 2026 AgroSphere. All Rights Reserved.
-    </p>
-
+    © 2026 FarmMarket Platform
   </div>
 
 </footer>
 
-  <!-- JS -->
-  <script src="index1.js"></script>
 
+
+
+
+<script src="index1.js"></script>
 </body>
-
 </html>
