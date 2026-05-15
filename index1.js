@@ -76,3 +76,43 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+
+
+
+function searchNow(){
+  const value = document.querySelector(".search-box input").value;
+  alert("Searching: " + value);
+}
+
+function buyNow(){
+  alert("Redirecting to Products Page...");
+}
+
+function sellNow(){
+  alert("Redirecting to Seller Registration...");
+}
+
+
+
+let currentSlide = 0;
+
+function showSlide(index){
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+
+  slides.forEach(s => s.classList.remove("active"));
+  dots.forEach(d => d.classList.remove("active"));
+
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+
+  currentSlide = index;
+}
+
+/* AUTO SLIDE */
+setInterval(() => {
+  const slides = document.querySelectorAll(".slide");
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}, 4000);

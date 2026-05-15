@@ -6,6 +6,9 @@
 <title>Farmers Market Platform</title>
 
 <link rel="stylesheet" href="style.css">
+
+<rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -35,12 +38,9 @@
       <a href="dashboard.html">Dashboard</a>
       <a href="contact.html">Contact</a>
     </nav>
-    
-             <button id="rtlBtn">RTL</button>
 
 
-      
-      <!-- CTA -->
+    <!-- CTA -->
       <button class="primary-btn" onclick="document.location='login.html'">Login</button>
 
     </div>
@@ -48,192 +48,56 @@
   </div>
 </header>
 
-
+    
 
 <section class="hero">
 
-  <!-- OVERLAY CONTENT -->
+  <!-- BACKGROUND OVERLAY -->
+  <div class="overlay"></div>
+
+  <!-- CONTENT ONLY -->
   <div class="hero-content">
 
-    <h1>Direct Farm to Market Platform</h1>
+    
+
+    <h1>
+      Fresh From <span>Local Farmers</span>
+    </h1>
 
     <p>
-      Connect farmers directly with buyers, remove middlemen,
-      and increase profit with a smart digital marketplace.
+      Discover organic vegetables, fruits, dairy products and farm fresh groceries
+      delivered directly to your doorstep.
     </p>
+
+    <!-- SEARCH BAR -->
+    <div class="search-box">
+      <input type="text" placeholder="Search products, farmers, categories...">
+      <button>Search</button>
+    </div>
 
     <!-- CTA BUTTONS -->
     <div class="buttons">
-      <button class="primary">Join as Vendor</button>
-      <button class="secondary">Start Buying</button>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="services">
-
-  <h2>🛠️ Services Overview</h2>
-  <p>Complete digital solutions for farmers and vendors</p>
-
-  <div class="service-grid">
-
-    <div class="service-card">
-      <div class="icon">🧑‍🌾</div>
-      <h3>Vendor Registration</h3>
-      <p>Easy online signup with profile and verification support.</p>
+      <a href="#" class="btn primary">Explore Market</a>
+      <a href="#" class="btn secondary">Become a Vendor</a>
     </div>
 
-    <div class="service-card">
-      <div class="icon">📦</div>
-      <h3>Product Listing</h3>
-      <p>Upload fresh products with images, categories, and pricing tools.</p>
-    </div>
+    <!-- STATS -->
+    <div class="stats">
 
-    <div class="service-card">
-      <div class="icon">🛒</div>
-      <h3>Marketplace Sales</h3>
-      <p>Sell directly to customers without middlemen for better profit.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">🚚</div>
-      <h3>Delivery Support</h3>
-      <p>Integrated delivery tracking and logistics management system.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">💳</div>
-      <h3>Payment System</h3>
-      <p>Secure transactions with instant payouts and wallet support.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">📢</div>
-      <h3>Marketing Tools</h3>
-      <p>Promotions, offers, and featured listings to boost sales.</p>
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<section class="features">
-
-  <h2>📊 Key Features & Highlights</h2>
-  <p>Powerful tools designed to connect farmers and buyers efficiently</p>
-
-  <div class="feature-grid">
-
-    <div class="feature-card">
-      <div class="icon">⚡</div>
-      <h3>Fast Ordering System</h3>
-      <p>Quick and seamless order placement with instant confirmation.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="icon">🤝</div>
-      <h3>Direct Farmer-to-Buyer</h3>
-      <p>No middlemen—farmers sell directly to customers for better profit.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="icon">🔒</div>
-      <h3>Secure Payments</h3>
-      <p>Safe transactions with encrypted payment gateway support.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="icon">📡</div>
-      <h3>Real-Time Updates</h3>
-      <p>Live order tracking, pricing updates, and availability status.</p>
-    </div>
-
-    <div class="feature-card">
-      <div class="icon">📱</div>
-      <h3>Mobile-Friendly Platform</h3>
-      <p>Optimized experience for all devices including mobile and tablets.</p>
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<section class="success">
-
-  <h2>🚜 Farmer Success Stories</h2>
-  <p>Real growth stories from farmers using our platform</p>
-
-  <!-- GROWTH HIGHLIGHTS -->
-  <div class="growth">
-
-    <div class="growth-card">
-      <h3>1,200+</h3>
-      <p>Active Farmers</p>
-    </div>
-
-    <div class="growth-card">
-      <h3>85%</h3>
-      <p>Income Growth</p>
-    </div>
-
-    <div class="growth-card">
-      <h3>5,000+</h3>
-      <p>Daily Orders</p>
-    </div>
-
-  </div>
-
-  <!-- SUCCESS STORIES -->
-  <div class="story-grid">
-
-    <!-- CARD 1 -->
-    <div class="story-card">
-
-      <h3>👨‍🌾 Ramesh Kumar</h3>
-
-      <div class="income">
-        <div class="before">Before<br>₹8,000</div>
-        <div class="arrow">➡️</div>
-        <div class="after">After<br>₹28,000</div>
+      <div class="card">
+        <h3>25K+</h3>
+        <p>Happy Customers</p>
       </div>
 
-      <p>"Selling directly helped me increase my income significantly."</p>
-
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="story-card">
-
-      <h3>👩‍🌾 Lakshmi Devi</h3>
-
-      <div class="income">
-        <div class="before">Before<br>₹10,000</div>
-        <div class="arrow">➡️</div>
-        <div class="after">After<br>₹35,000</div>
+      <div class="card">
+        <h3>850+</h3>
+        <p>Farmers</p>
       </div>
 
-      <p>"Now I reach more customers without middlemen."</p>
-
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="story-card">
-
-      <h3>👨‍🌾 Suresh Reddy</h3>
-
-      <div class="income">
-        <div class="before">Before<br>₹12,000</div>
-        <div class="arrow">➡️</div>
-        <div class="after">After<br>₹42,000</div>
+      <div class="card">
+        <h3>120+</h3>
+        <p>Products</p>
       </div>
-
-      <p>"The platform improved my farming business growth."</p>
 
     </div>
 
@@ -241,45 +105,147 @@
 
 </section>
 
+<section class="categories">
 
+  <div class="section-title">
+    <h2>Featured Categories</h2>
+    <p>Explore fresh products directly from farmers</p>
+  </div>
 
-<section class="products">
+  <div class="category-grid">
 
-  <h2>🛒 Featured Products</h2>
-  <p>Fresh farm products directly from farmers</p>
-
-  <div class="product-grid">
-
-    <!-- VEGETABLES -->
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="">
+    <div class="category-card veg">
+      <div class="overlay"></div>
       <h3>Vegetables</h3>
-      <p>Fresh & organic farm vegetables</p>
-      <span class="price">₹40 / kg</span>
     </div>
 
-    <!-- FRUITS -->
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e" alt="">
+    <div class="category-card fruits">
+      <div class="overlay"></div>
       <h3>Fruits</h3>
-      <p>Seasonal fresh fruits collection</p>
-      <span class="price">₹80 / kg</span>
     </div>
 
-    <!-- GRAINS -->
-    <div class="product-card">
-      <img src="images/g1 image.jpg" alt="">
-      <h3>Grains</h3>
-      <p>High-quality natural grains</p>
-      <span class="price">₹60 / kg</span>
-    </div>
-
-    <!-- DAIRY -->
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b" alt="">
+    <div class="category-card dairy">
+      <div class="overlay"></div>
       <h3>Dairy Products</h3>
-      <p>Fresh milk and dairy items</p>
-      <span class="price">₹70 / liter</span>
+    </div>
+
+    <div class="category-card grains">
+      <div class="overlay"></div>
+      <h3>Grains</h3>
+    </div>
+
+    
+
+</section>
+
+<section class="showcase">
+
+  <!-- BLOCK 1 -->
+  <div class="block">
+    <div class="text">
+      <h2>Fresh From Farms</h2>
+      <p>
+        Get directly sourced fresh vegetables and fruits from local farmers
+        without middlemen. Pure, natural and affordable.
+      </p>
+    </div>
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
+    </div>
+  </div>
+
+  <!-- BLOCK 2 -->
+  <div class="block reverse">
+    <div class="text">
+      <h2>100% Organic Products</h2>
+      <p>
+        All products are grown naturally without harmful chemicals or pesticides.
+        Healthy food for a healthy life.
+      </p>
+    </div>
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1542838132-92c53300491e" alt="">
+    </div>
+  </div>
+
+  <!-- BLOCK 3 -->
+  <div class="block">
+    <div class="text">
+      <h2>Direct Delivery System</h2>
+      <p>
+        Fast delivery from farms to your doorstep with real-time tracking and
+        secure handling.
+      </p>
+    </div>
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59" alt="">
+    </div>
+  </div>
+
+</section>
+
+<section class="live-stats">
+
+  <div class="stat">
+    <h2>10,000+</h2>
+    <p>Farmers</p>
+  </div>
+
+  <div class="stat">
+    <h2>50,000+</h2>
+    <p>Customers</p>
+  </div>
+
+  <div class="stat">
+    <h2>100%</h2>
+    <p>Organic Products</p>
+  </div>
+
+  <div class="stat">
+    <h2>24/7</h2>
+    <p>Support</p>
+  </div>
+
+</section>
+
+
+   <section class="farmer-spotlight">
+
+  <h2>Farmer Spotlight</h2>
+  <p>Meet our trusted local farmers</p>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="avatar">👨‍🌾</div>
+      <h3>Ravi Kumar</h3>
+      <p>Vegetables & Organic Farming</p>
+      <span>⭐ 4.8 Rating</span>
+      <button>Visit Profile</button>
+    </div>
+
+    <div class="card">
+      <div class="avatar">👩‍🌾</div>
+      <h3>Sunita Devi</h3>
+      <p>Fresh Fruits Specialist</p>
+      <span>⭐ 4.7 Rating</span>
+      <button>Visit Profile</button>
+    </div>
+
+    <div class="card">
+      <div class="avatar">🌾</div>
+      <h3>Mahesh Farms</h3>
+      <p>Organic Grain Producer</p>
+      <span>⭐ 4.9 Rating</span>
+      <button>Visit Profile</button>
+    </div>
+
+    <div class="card">
+      <div class="avatar">🥕</div>
+      <h3>Green Valley</h3>
+      <p>Vegetable Supplier</p>
+      <span>⭐ 4.6 Rating</span>
+      <button>Visit Profile</button>
     </div>
 
   </div>
@@ -288,159 +254,17 @@
 
 
 
-<section class="trends">
 
-  <h2>📊 Market Trends</h2>
-  <p>Real-time insights on agricultural market performance</p>
-
-  <!-- TOP METRICS -->
-  <div class="trend-stats">
-
-    <div class="stat-card">
-      <h3>₹28/kg</h3>
-      <p>Average Vegetable Price</p>
-    </div>
-
-    <div class="stat-card">
-      <h3>+18%</h3>
-      <p>Demand Growth</p>
-    </div>
-
-    <div class="stat-card">
-      <h3>High</h3>
-      <p>Seasonal Demand Level</p>
-    </div>
-
-    <div class="stat-card">
-      <h3>Top</h3>
-      <p>Trending Crops</p>
-    </div>
-
-  </div>
-
-</section>
+    
 
 
-<section class="blog-preview">
-
-  <h2>📝 Latest Blog & Updates</h2>
-  <p>Farming tips, market insights, and agricultural knowledge</p>
-
-  <div class="blog-grid">
-
-    <!-- CARD 1 -->
-    <div class="blog-card">
-      <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="">
-      <div class="content">
-        <span class="tag">🌾 Farming Tips</span>
-        <h3>Organic Farming Guide</h3>
-        <p>Learn natural techniques to improve soil health and crop yield.</p>
-        <a href="#">Read More →</a>
-      </div>
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="blog-card">
-      <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8" alt="">
-      <div class="content">
-        <span class="tag">📊 Market Updates</span>
-        <h3>Daily Price Trends</h3>
-        <p>Stay updated with real-time vegetable and fruit prices.</p>
-        <a href="#">Read More →</a>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="blog-card">
-      <img src="images/s image.jpg" alt="">
-      <div class="content">
-        <span class="tag">🚜 Agriculture</span>
-        <h3>Smart Farming Tools</h3>
-        <p>Explore modern AI tools and technology in agriculture.</p>
-        <a href="#">Read More →</a>
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<footer class="footer">
-
-  <div class="footer-container">
-
-    <!-- BRAND -->
-    <div class="footer-box">
-      <h3>FarmMarket</h3>
-      <p>Fresh products directly from farmers to your home.</p>
-
-      <div class="social-icons">
-
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-
-      </div>
-    </div>
-
-    <!-- LINKS -->
-    <div class="footer-box">
-      <h4>Quick Links</h4>
-      <a href="#">Home</a>
-      <a href="#">Vendors</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
-    </div>
-
-    <!-- CONTACT -->
-    <div class="footer-box">
-      <h4>Contact</h4>
-
-      <p>Email: support@farmmarket.com</p>
-      <p>Phone: +91 98765 43210</p>
-      <p>Location: India</p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    © 2026 FarmMarket Platform
-  </div>
-
-</footer>
 
 
-</div>
 
-  </div>
-
-</section>
-
-<script src="script.js"></script>
+<script src="services.js"></script>
 </body>
 </html>
 
-    
-
-      
 
 
 
-
-        
-
-
-
-
-          
-    
-
-
-
-      
-    
-
-<script src="about.js"></script>
-</body>
-</html>

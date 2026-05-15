@@ -52,31 +52,38 @@
   </div>
 </header>
 
-<section class="hero" id="home">
 
-  <div class="hero-overlay"></div>
 
-  <div class="container hero-content">
 
-    <div class="hero-text">
+<section class="hero">
 
-      <h1>Fresh Organic Food Directly From Farmers</h1>
+  <!-- floating shapes -->
+  <div class="shape s1"></div>
+  <div class="shape s2"></div>
+  <div class="shape s3"></div>
 
-      <p>
-        Discover healthy, chemical-free vegetables, fruits, and dairy products
-        delivered straight from local farms to your doorstep.
-      </p>
+  <div class="hero-content">
 
-      <div class="hero-buttons">
-        <button class="btn-primary">Shop Now</button>
-        <button class="btn-secondary">Become a Vendor</button>
-      </div>
+    <h1>Fresh From Farmers<br>To Your Home</h1>
 
+    <p>Organic vegetables, fruits, grains & dairy delivered directly from trusted farmers.</p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search fresh products...">
+      <button onclick="searchNow()">Search</button>
+    </div>
+
+    <div class="buttons">
+      <button class="primary" onclick="buyNow()">Buy Products</button>
+      <button class="secondary" onclick="sellNow()">Become a Seller</button>
     </div>
 
   </div>
 
 </section>
+
+
+  
 
 
         <section class="section showcase" id="showcase">
@@ -88,7 +95,7 @@
     <div class="showcase-grid">
 
       <div class="showcase-card">
-        <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="">
+        <img src="images/tomata image.jpg" alt="">
         <h3>Organic Tomatoes</h3>
         <p>Fresh farm tomatoes rich in taste and nutrients.</p>
         <span>₹40 / kg</span>
@@ -96,7 +103,7 @@
       </div>
 
       <div class="showcase-card">
-        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e" alt="">
+        <img src="images/apples.webp" alt="">
         <h3>Red Apples</h3>
         <p>Sweet and juicy apples from organic farms.</p>
         <span>₹120 / kg</span>
@@ -104,7 +111,7 @@
       </div>
 
       <div class="showcase-card">
-        <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2" alt="">
+        <img src="images/image 5.webp" alt="">
         <h3>Fresh Milk</h3>
         <p>Pure cow milk delivered daily from farms.</p>
         <span>₹60 / liter</span>
@@ -112,7 +119,7 @@
       </div>
 
       <div class="showcase-card">
-        <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655" alt="">
+        <img src="images/carrot.jpg" alt="">
         <h3>Carrots</h3>
         <p>Crunchy organic carrots full of vitamins.</p>
         <span>₹35 / kg</span>
@@ -125,28 +132,44 @@
 
 </section>
 
-<section class="section payment" id="payment">
 
-  <div class="container">
+<section class="feature-story">
 
-    <h2 class="section-title">Secure Payment</h2>
+  <div class="story-container">
 
-    <div class="payment-box">
+    <!-- IMAGE SIDE -->
+    <div class="story-image">
+      <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8" alt="Farm Story">
+    </div>
 
-      <input type="text" placeholder="Card Number">
-      <input type="text" placeholder="Card Holder Name">
-      <input type="text" placeholder="Expiry Date">
-      <input type="text" placeholder="CVV">
+    <!-- TEXT SIDE -->
+    <div class="story-text">
 
-      <button onclick="payNow()">Pay Now</button>
+      <h2>From Farm to Table</h2>
 
-      <p id="payMsg"></p>
+      <p>
+        We believe fresh food should come directly from farmers without middlemen.
+        Our platform connects local farmers with customers in the fastest and most
+        transparent way possible.
+      </p>
+
+      <p>
+        Every product you see is carefully grown, naturally harvested, and delivered
+        with trust and care.
+      </p>
+
+      <p class="highlight">
+        🌿 Our mission is simple — fair prices for farmers, fresh food for families.
+      </p>
+
+      <button>Learn More</button>
 
     </div>
 
   </div>
 
 </section>
+
 
 <section class="section pricing" id="pricing">
 
@@ -252,6 +275,41 @@
 
 </section>
 
+<section class="impact">
+
+  <div class="impact-content">
+
+    <h2>We Are Making an Impact</h2>
+    <p>Connecting farmers and customers with transparency and trust</p>
+
+    <div class="impact-row">
+
+      <div class="impact-item">
+        <h3>2,50,000+</h3>
+        <p>Orders Delivered</p>
+      </div>
+
+      <div class="impact-item">
+        <h3>12,000+</h3>
+        <p>Active Farmers</p>
+      </div>
+
+      <div class="impact-item">
+        <h3>98%</h3>
+        <p>Customer Satisfaction</p>
+      </div>
+
+      <div class="impact-item">
+        <h3>24/7</h3>
+        <p>Support System</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 <section class="section faq" id="faq">
 
   <div class="container">
@@ -302,72 +360,97 @@
 
 </section>
 
-<section class="cta-banner" id="cta">
 
-  <div class="container cta-content">
 
-    <h2>Join the Farmers Market Today</h2>
 
-    <p>
-      Connect directly with local farmers, get fresh organic products,
-      and grow your business with our platform.
-    </p>
+<section class="testimonials">
 
-    <div class="cta-buttons">
-      <button class="primary-btn">Get Started</button>
-      
+  <h2>What Our Customers Say</h2>
+  <p>Real feedback from happy buyers</p>
+
+  <div class="slider">
+
+    <div class="slide active">
+      <p>"Fresh vegetables delivered in just 24 hours. Amazing quality!"</p>
+      <h3>Ramesh Kumar</h3>
+      <span>⭐⭐⭐⭐⭐</span>
     </div>
 
+    <div class="slide">
+      <p>"Best platform for buying organic fruits directly from farmers."</p>
+      <h3>Priya Sharma</h3>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+
+    <div class="slide">
+      <p>"Very trustworthy farmers and smooth delivery experience."</p>
+      <h3>Arjun Reddy</h3>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+
+  </div>
+
+  <!-- dots -->
+  <div class="dots">
+    <span class="dot active" onclick="showSlide(0)"></span>
+    <span class="dot" onclick="showSlide(1)"></span>
+    <span class="dot" onclick="showSlide(2)"></span>
   </div>
 
 </section>
 
 
-<footer class="footer">
+
+   <footer class="footer">
 
   <div class="footer-container">
 
     <!-- BRAND -->
     <div class="footer-box">
-      <h3>FarmMarket</h3>
-      <p>Fresh products directly from farmers to your home.</p>
+      <h2>FarmFresh</h2>
+      <p>Connecting farmers directly to customers with trust, quality, and fast delivery.</p>
 
-      <div class="social-icons">
-
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-
+      <div class="social">
+        <span>📘</span>
+        <span>📸</span>
+        <span>🐦</span>
+        <span>▶️</span>
       </div>
     </div>
 
     <!-- LINKS -->
     <div class="footer-box">
-      <h4>Quick Links</h4>
+      <h3>Quick Links</h3>
       <a href="#">Home</a>
-      <a href="#">Vendors</a>
       <a href="#">Products</a>
+      <a href="#">Farmers</a>
+      <a href="#">About</a>
+    </div>
+
+    <!-- SUPPORT -->
+    <div class="footer-box">
+      <h3>Support</h3>
+      <a href="#">Help Center</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
       <a href="#">Contact</a>
     </div>
 
     <!-- CONTACT -->
     <div class="footer-box">
-      <h4>Contact</h4>
-
-      <p>Email: support@farmmarket.com</p>
-      <p>Phone: +91 98765 43210</p>
-      <p>Location: India</p>
+      <h3>Contact</h3>
+      <p>📍 India</p>
+      <p>📞 +91 9876543210</p>
+      <p>📧 support@farmfresh.com</p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    © 2026 FarmMarket Platform
+    <p>© 2026 FarmFresh. All Rights Reserved.</p>
   </div>
 
 </footer>
-
 
 
 
